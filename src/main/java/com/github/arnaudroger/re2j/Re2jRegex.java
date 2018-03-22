@@ -62,14 +62,14 @@ public class Re2jRegex {
     @Benchmark
     public void testExp1(Blackhole blackhole) {
         for(String str : data) {
-            blackhole.consume(exp1.find(str));
+            blackhole.consume(exp1.matcher(str).find());
         }
     }
     
     @Benchmark
     public void testExp2(Blackhole blackhole) {
         for(String str : data) {
-            blackhole.consume(exp2.find(str));
+            blackhole.consume(exp2.matcher(str).find());
         }
     }
 }
