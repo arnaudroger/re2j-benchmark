@@ -52,6 +52,11 @@ Re2jRegex.testExp2  thrpt   20  5784.196 ± 177.760  ops/s 100%/140%   5x
 Benchmark            Mode  Cnt     Score     Error  Units
 Re2jRegex.testExp1  thrpt   20  9211.810 ± 164.813  ops/s   4%/65%
 Re2jRegex.testExp2  thrpt   20  6008.852 ± 126.747  ops/s   4%/151%
+```
 
-
+```
+06_queue_1        334e94485386aa052fa1ef3c9e00e0a507c41449 
+Benchmark            Mode  Cnt      Score     Error  Units
+Re2jRegex.testExp1  thrpt   20  10155.607 ±  72.267  ops/s  10%/82%   7x
+Re2jRegex.testExp2  thrpt   20   6793.033 ± 152.834  ops/s  13%/183%  4x
 ```
