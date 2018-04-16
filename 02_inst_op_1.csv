@@ -1,0 +1,5 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"com.github.arnaudroger.re2j.JavaRegex.testExp1","thrpt",1,200,81772.131287,500.452692,"ops/s"
+"com.github.arnaudroger.re2j.JavaRegex.testExp2","thrpt",1,200,35060.635270,233.260427,"ops/s"
+"com.github.arnaudroger.re2j.Re2jRegex.testExp1","thrpt",1,200,7393.414467,53.378235,"ops/s"
+"com.github.arnaudroger.re2j.Re2jRegex.testExp2","thrpt",1,200,3216.582128,39.083261,"ops/s"
