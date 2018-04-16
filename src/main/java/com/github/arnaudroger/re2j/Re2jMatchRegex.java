@@ -31,6 +31,7 @@
 
 package com.github.arnaudroger.re2j;
 
+import com.google.re2j.Pattern;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Level;
 import org.openjdk.jmh.annotations.Scope;
@@ -38,13 +39,11 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
 
-import java.util.regex.Pattern;
-
 @State(Scope.Benchmark)
-public class JavaRegex {
+public class Re2jMatchRegex {
 
     public static final int FLAGS = Pattern.CASE_INSENSITIVE | Pattern.DOTALL;
-    
+
     private String[] data;
     private Pattern exp1;
     private Pattern exp2;
@@ -53,7 +52,6 @@ public class JavaRegex {
     public void setUpData() {
         data = Data.randomizeData();
     }
-    
     @Setup
     public void setUpPattern() {
         exp1 = Pattern.compile(Regexes.EXP1, FLAGS);
@@ -69,14 +67,13 @@ public class JavaRegex {
     
     @Benchmark
     public void testExp2(Blackhole blackhole) {
-        for (String str : data) {
+        for(String str : data) {
             blackhole.consume(exp2.matcher(str).find());
         }
     }
-
     @Benchmark
     public void testCombine(Blackhole blackhole) {
-        for (String str : data) {
+        for(String str : data) {
             blackhole.consume(exp1.matcher(str).find());
             blackhole.consume(exp2.matcher(str).find());
         }
