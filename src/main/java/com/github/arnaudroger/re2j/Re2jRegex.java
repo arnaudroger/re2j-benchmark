@@ -43,7 +43,7 @@ import com.google.re2j.Pattern;
 @State(Scope.Benchmark)
 public class Re2jRegex {
 
-    public static final int FLAGS = Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.DOTALL;
+    public static final int FLAGS = Pattern.CASE_INSENSITIVE | Pattern.DOTALL;
 
     private String[] data;
     private Pattern exp1;
