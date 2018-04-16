@@ -11,55 +11,55 @@
 
 # Run progress: 0.00% complete, ETA 00:00:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 24771.602 ops/s
-# Warmup Iteration   2: 26030.788 ops/s
-# Warmup Iteration   3: 25996.174 ops/s
-# Warmup Iteration   4: 26113.477 ops/s
-# Warmup Iteration   5: 26246.512 ops/s
-# Warmup Iteration   6: 26124.275 ops/s
-# Warmup Iteration   7: 26248.827 ops/s
-# Warmup Iteration   8: 26084.081 ops/s
-# Warmup Iteration   9: 26286.855 ops/s
-# Warmup Iteration  10: 26277.372 ops/s
-# Warmup Iteration  11: 26210.078 ops/s
-# Warmup Iteration  12: 26169.172 ops/s
-# Warmup Iteration  13: 26061.821 ops/s
-# Warmup Iteration  14: 26261.358 ops/s
-# Warmup Iteration  15: 26278.227 ops/s
-# Warmup Iteration  16: 26253.503 ops/s
-# Warmup Iteration  17: 26298.326 ops/s
-# Warmup Iteration  18: 26125.473 ops/s
-# Warmup Iteration  19: 26230.552 ops/s
-# Warmup Iteration  20: 26217.674 ops/s
-Iteration   1: 26284.453 ops/s
-Iteration   2: 26275.429 ops/s
-Iteration   3: 26118.517 ops/s
-Iteration   4: 26355.086 ops/s
-Iteration   5: 26267.893 ops/s
-Iteration   6: 26280.455 ops/s
-Iteration   7: 26245.500 ops/s
-Iteration   8: 26080.031 ops/s
-Iteration   9: 26319.937 ops/s
-Iteration  10: 26335.112 ops/s
-Iteration  11: 26246.532 ops/s
-Iteration  12: 26287.398 ops/s
-Iteration  13: 26140.995 ops/s
-Iteration  14: 26322.435 ops/s
-Iteration  15: 26240.319 ops/s
-Iteration  16: 26325.427 ops/s
-Iteration  17: 26285.135 ops/s
-Iteration  18: 26051.544 ops/s
-Iteration  19: 26355.125 ops/s
-Iteration  20: 26325.437 ops/s
+# Warmup Iteration   1: 24740.862 ops/s
+# Warmup Iteration   2: 26000.369 ops/s
+# Warmup Iteration   3: 26174.183 ops/s
+# Warmup Iteration   4: 26241.894 ops/s
+# Warmup Iteration   5: 26256.944 ops/s
+# Warmup Iteration   6: 26136.965 ops/s
+# Warmup Iteration   7: 25928.662 ops/s
+# Warmup Iteration   8: 26070.640 ops/s
+# Warmup Iteration   9: 26121.139 ops/s
+# Warmup Iteration  10: 25790.695 ops/s
+# Warmup Iteration  11: 26072.304 ops/s
+# Warmup Iteration  12: 25866.720 ops/s
+# Warmup Iteration  13: 26330.276 ops/s
+# Warmup Iteration  14: 26335.000 ops/s
+# Warmup Iteration  15: 26321.030 ops/s
+# Warmup Iteration  16: 26302.448 ops/s
+# Warmup Iteration  17: 26120.550 ops/s
+# Warmup Iteration  18: 26313.898 ops/s
+# Warmup Iteration  19: 26331.483 ops/s
+# Warmup Iteration  20: 26352.072 ops/s
+Iteration   1: 26304.509 ops/s
+Iteration   2: 26135.478 ops/s
+Iteration   3: 26310.810 ops/s
+Iteration   4: 26315.658 ops/s
+Iteration   5: 26065.643 ops/s
+Iteration   6: 26238.730 ops/s
+Iteration   7: 26088.442 ops/s
+Iteration   8: 26295.936 ops/s
+Iteration   9: 26287.006 ops/s
+Iteration  10: 26292.728 ops/s
+Iteration  11: 26239.579 ops/s
+Iteration  12: 26022.144 ops/s
+Iteration  13: 26348.022 ops/s
+Iteration  14: 26355.935 ops/s
+Iteration  15: 26339.807 ops/s
+Iteration  16: 26306.688 ops/s
+Iteration  17: 26130.976 ops/s
+Iteration  18: 26270.182 ops/s
+Iteration  19: 26330.622 ops/s
+Iteration  20: 26332.672 ops/s
 
 
 Result "com.github.arnaudroger.re2j.Re2jFindRegex.testExp1":
-  26257.138 ±(99.9%) 77.954 ops/s [Average]
-  (min, avg, max) = (26051.544, 26257.138, 26355.125), stdev = 89.772
-  CI (99.9%): [26179.184, 26335.092] (assumes normal distribution)
+  26250.578 ±(99.9%) 89.459 ops/s [Average]
+  (min, avg, max) = (26022.144, 26250.578, 26355.935), stdev = 103.021
+  CI (99.9%): [26161.119, 26340.037] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:00:40
 
 Benchmark                Mode  Cnt      Score    Error  Units
-Re2jFindRegex.testExp1  thrpt   20  26257.138 ± 77.954  ops/s
+Re2jFindRegex.testExp1  thrpt   20  26250.578 ± 89.459  ops/s
