@@ -60,3 +60,18 @@ Benchmark            Mode  Cnt      Score     Error  Units
 Re2jRegex.testExp1  thrpt   20  10155.607 ±  72.267  ops/s  10%/82%   7x
 Re2jRegex.testExp2  thrpt   20   6793.033 ± 152.834  ops/s  13%/183%  4x
 ```
+
+
+```
+06_queue_1        334e94485386aa052fa1ef3c9e00e0a507c41449 
+Benchmark            Mode  Cnt      Score      Error  Units
+Re2jRegex.testExp1  thrpt   20  12248.762 ±  305.589  ops/s  20%/119%
+Re2jRegex.testExp2  thrpt   20   8574.090 ±  145.671  ops/s  26%/258%
+```
+
+```
+07_pattern_find_1 0aca850d68f27d7c2674a512f4f35e2fdd1825fa
+Benchmark            Mode  Cnt      Score     Error  Units
+Re2jRegex.testExp1  thrpt   20  15798.117 ± 347.506  ops/s  29%/182%
+Re2jRegex.testExp2  thrpt   20  10704.272 ± 371.194  ops/s  25%/347%
+```
