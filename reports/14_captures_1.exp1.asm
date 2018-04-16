@@ -11,55 +11,52 @@
 
 # Run progress: 0.00% complete, ETA 00:00:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 26554.713 ops/s
-# Warmup Iteration   2: 28178.810 ops/s
-# Warmup Iteration   3: 28342.747 ops/s
-# Warmup Iteration   4: 28347.424 ops/s
-# Warmup Iteration   5: 28271.217 ops/s
-# Warmup Iteration   6: 28043.415 ops/s
-# Warmup Iteration   7: 28358.083 ops/s
-# Warmup Iteration   8: 28358.523 ops/s
-# Warmup Iteration   9: 28340.526 ops/s
-# Warmup Iteration  10: 28291.303 ops/s
-# Warmup Iteration  11: 28063.512 ops/s
-# Warmup Iteration  12: 28503.261 ops/s
-# Warmup Iteration  13: 28436.028 ops/s
-# Warmup Iteration  14: 28476.161 ops/s
-# Warmup Iteration  15: 28462.184 ops/s
-# Warmup Iteration  16: 28304.047 ops/s
-# Warmup Iteration  17: 28360.498 ops/s
-# Warmup Iteration  18: 28114.395 ops/s
-# Warmup Iteration  19: 28072.720 ops/s
-# Warmup Iteration  20: 28066.704 ops/s
-Iteration   1: 27867.019 ops/s
-Iteration   2: 28020.500 ops/s
-Iteration   3: 28021.497 ops/s
-Iteration   4: 27999.344 ops/s
-Iteration   5: 27925.517 ops/s
-Iteration   6: 27822.949 ops/s
-Iteration   7: 28022.193 ops/s
-Iteration   8: 28012.727 ops/s
-Iteration   9: 27967.626 ops/s
-Iteration  10: 28417.609 ops/s
-Iteration  11: 28287.700 ops/s
-Iteration  12: 28490.140 ops/s
-Iteration  13: 28481.640 ops/s
-Iteration  14: 28448.426 ops/s
-Iteration  15: 28361.987 ops/s
-Iteration  16: 28247.346 ops/s
-Iteration  17: 28409.388 ops/s
-Iteration  18: 28463.174 ops/s
-Iteration  19: 28453.056 ops/s
-Iteration  20: 28419.726 ops/s
+# Preparing profilers: LinuxPerfAsmProfiler 
+# Profilers consume stdout and stderr from target VM, use -v EXTRA to copy to console
+<forked VM failed with exit code 134>
+<stdout last='20 lines'>
+  0x00007f5cf5175e35: aadd    %al,(%rax)
+  0x00007f5cf5175e37: nadd    %al,(%rax)
+  0x00007f5cf5175e39: g/Sadd    %al,(%rax)
+  0x00007f5cf5175e3b: eadd    %al,(%rax)
+  0x00007f5cf5175e3d: curadd    %al,(%rax)
+  0x00007f5cf5175e3f: .byte 0x0
+ityManager;' in 'java/lang/System'
+Decoding VtableStub vtbl[36]@12
+  #           [sp+0x40]  (sp of caller)
+  0x00007f5cf51b8920: mov    %eax,-0x14000(%rsp)
 
+  0x00007f5cf5175e50:   0x00007f5cf51b8927: mov%rbp    
+  0x00007f5cf51b8928: sub    $0x30,%rsp
+  0x00007f5cf51b892c: movabs $0x76cf80c78,%rax  ;   {oop(a 'java/lang/Class' = 'java/lang/System')}
+  0x00007f5cf51b8936: mov    0x74(%rax),%eax
+  0x00007f5cf51b8939: shl    $0x3,%rax          ;*getstatic security
+                                                ; - java.lang.System::getSecurityManager@0 (line 334)
 
-Result "com.github.arnaudroger.re2j.Re2jFindRegex.testExp1":
-  28206.978 ±(99.9%) 207.662 ops/s [Average]
-  (min, avg, max) = (27822.949, 28206.978, 28490.140), stdev = 239.144
-  CI (99.9%): [27999.316, 28414.640] (assumes normal distribution)
+  0x00007f5cf51b893d: add    $0x30,%rsp
+  0x00007f5cf51b8941: pop    %rbp
+</stdout>
+<stderr last='20 lines'>
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict.
 
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
 
-# Run complete. Total time: 00:00:40
+Samples in kernel modules won't be resolved at all.
 
-Benchmark                Mode  Cnt      Score     Error  Units
-Re2jFindRegex.testExp1  thrpt   20  28206.978 ± 207.662  ops/s
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Java HotSpot(TM) 64-Bit Server VM warning: PrintAssembly is enabled; turning on DebugNonSafepoints to gain additional output
+[ perf record: Woken up 1 times to write data ]
+[kernel.kallsyms] with build id 6bdee301cd0ea1b997183c1e367b640cf42aed7d not found, continuing without symbols
+[ perf record: Captured and wrote 0.235 MB /tmp/jmh4351589178317384660perfbin (5015 samples) ]
+</stderr>
+
+# Run complete. Total time: 00:00:00
+
+Benchmark  Mode  Cnt  Score   Error  Units
