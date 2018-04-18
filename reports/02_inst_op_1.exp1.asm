@@ -13,694 +13,698 @@
 # Fork: 1 of 1
 # Preparing profilers: LinuxPerfAsmProfiler 
 # Profilers consume stdout and stderr from target VM, use -v EXTRA to copy to console
-# Warmup Iteration   1: 4138.865 ops/s
-# Warmup Iteration   2: 7379.361 ops/s
-# Warmup Iteration   3: 7275.462 ops/s
-# Warmup Iteration   4: 7453.662 ops/s
-# Warmup Iteration   5: 7516.161 ops/s
-# Warmup Iteration   6: 7505.126 ops/s
-# Warmup Iteration   7: 7516.437 ops/s
-# Warmup Iteration   8: 7528.255 ops/s
-# Warmup Iteration   9: 7508.673 ops/s
-# Warmup Iteration  10: 7505.560 ops/s
-# Warmup Iteration  11: 7348.683 ops/s
-# Warmup Iteration  12: 7556.097 ops/s
-# Warmup Iteration  13: 7456.688 ops/s
-# Warmup Iteration  14: 7459.115 ops/s
-# Warmup Iteration  15: 7430.638 ops/s
-# Warmup Iteration  16: 7531.026 ops/s
-# Warmup Iteration  17: 7533.290 ops/s
-# Warmup Iteration  18: 7510.330 ops/s
-# Warmup Iteration  19: 7581.782 ops/s
-# Warmup Iteration  20: 7568.055 ops/s
-Iteration   1: 7606.463 ops/s
-Iteration   2: 7540.554 ops/s
-Iteration   3: 7371.793 ops/s
-Iteration   4: 7373.159 ops/s
-Iteration   5: 7369.423 ops/s
-Iteration   6: 7392.201 ops/s
-Iteration   7: 7377.516 ops/s
-Iteration   8: 7338.506 ops/s
-Iteration   9: 7338.886 ops/s
-Iteration  10: 7392.527 ops/s
-Iteration  11: 7403.639 ops/s
-Iteration  12: 7383.032 ops/s
-Iteration  13: 7351.159 ops/s
-Iteration  14: 7403.126 ops/s
-Iteration  15: 7377.262 ops/s
-Iteration  16: 7380.463 ops/s
-Iteration  17: 7389.449 ops/s
-Iteration  18: 7330.125 ops/s
-Iteration  19: 7409.036 ops/s
-Iteration  20: 7396.740 ops/s
+# Warmup Iteration   1: 2720.466 ops/s
+# Warmup Iteration   2: 5868.263 ops/s
+# Warmup Iteration   3: 5935.027 ops/s
+# Warmup Iteration   4: 5898.350 ops/s
+# Warmup Iteration   5: 5826.751 ops/s
+# Warmup Iteration   6: 5836.151 ops/s
+# Warmup Iteration   7: 5837.314 ops/s
+# Warmup Iteration   8: 5829.273 ops/s
+# Warmup Iteration   9: 5860.195 ops/s
+# Warmup Iteration  10: 5886.598 ops/s
+# Warmup Iteration  11: 5873.377 ops/s
+# Warmup Iteration  12: 5883.696 ops/s
+# Warmup Iteration  13: 5877.715 ops/s
+# Warmup Iteration  14: 5960.901 ops/s
+# Warmup Iteration  15: 5962.563 ops/s
+# Warmup Iteration  16: 5457.257 ops/s
+# Warmup Iteration  17: 5844.548 ops/s
+# Warmup Iteration  18: 5765.327 ops/s
+# Warmup Iteration  19: 5864.702 ops/s
+# Warmup Iteration  20: 5828.827 ops/s
+Iteration   1: 5896.550 ops/s
+Iteration   2: 5847.563 ops/s
+Iteration   3: 5822.108 ops/s
+Iteration   4: 5810.184 ops/s
+Iteration   5: 5911.592 ops/s
+Iteration   6: 5940.721 ops/s
+Iteration   7: 5941.369 ops/s
+Iteration   8: 5940.089 ops/s
+Iteration   9: 5944.918 ops/s
+Iteration  10: 5965.578 ops/s
+Iteration  11: 5966.564 ops/s
+Iteration  12: 5966.082 ops/s
+Iteration  13: 5960.126 ops/s
+Iteration  14: 5966.194 ops/s
+Iteration  15: 5967.119 ops/s
+Iteration  16: 5901.551 ops/s
+Iteration  17: 5959.214 ops/s
+Iteration  18: 5964.348 ops/s
+Iteration  19: 5964.832 ops/s
+Iteration  20: 5959.836 ops/s
 # Processing profiler results: LinuxPerfAsmProfiler 
 
 
 Result "com.github.arnaudroger.re2j.Re2jFindRegex.testExp1":
-  7396.253 ±(99.9%) 56.828 ops/s [Average]
-  (min, avg, max) = (7330.125, 7396.253, 7606.463), stdev = 65.443
-  CI (99.9%): [7339.425, 7453.081] (assumes normal distribution)
+  5929.827 ±(99.9%) 43.310 ops/s [Average]
+  (min, avg, max) = (5810.184, 5929.827, 5967.119), stdev = 49.876
+  CI (99.9%): [5886.517, 5973.137] (assumes normal distribution)
 
 Secondary result "com.github.arnaudroger.re2j.Re2jFindRegex.testExp1:·asm":
-PrintAssembly processed: 212370 total address lines.
-Perf output processed (skipped 22.982 seconds):
- Column 1: cycles (20513 events)
- Column 2: instructions (20497 events)
+PrintAssembly processed: 197146 total address lines.
+Perf output processed (skipped 23.400 seconds):
+ Column 1: cycles (20535 events)
+ Column 2: instructions (20600 events)
 
 Hottest code regions (>10.00% "cycles" events):
 
 ....[Hottest Region 1]..............................................................................
-C2, level 4, com.google.re2j.Machine::add, version 523 (331 bytes) 
+C2, level 4, com.google.re2j.Machine::add, version 494 (344 bytes) 
 
                        # parm4:    rdi       = int
                        # parm5:    [sp+0x70]   = &apos;com/google/re2j/Machine$Thread&apos;  (sp of caller)
-                       0x00007f31d12380a0: mov    0x8(%rsi),%r10d    ;   {no_reloc}
-                       0x00007f31d12380a4: shl    $0x3,%r10
-                       0x00007f31d12380a8: cmp    %r10,%rax
-                       0x00007f31d12380ab: jne    0x00007f31d1045e20  ;   {runtime_call}
-                       0x00007f31d12380b1: data16 xchg %ax,%ax
-                       0x00007f31d12380b4: nopl   0x0(%rax,%rax,1)
-                       0x00007f31d12380bc: data16 data16 xchg %ax,%ax
+                       0x00007ff4f92166e0: mov    0x8(%rsi),%r10d    ;   {no_reloc}
+                       0x00007ff4f92166e4: shl    $0x3,%r10
+                       0x00007ff4f92166e8: cmp    %r10,%rax
+                       0x00007ff4f92166eb: jne    0x00007ff4f9045e20  ;   {runtime_call}
+                       0x00007ff4f92166f1: data16 xchg %ax,%ax
+                       0x00007ff4f92166f4: nopl   0x0(%rax,%rax,1)
+                       0x00007ff4f92166fc: data16 data16 xchg %ax,%ax
                      [Verified Entry Point]
-  0.47%    0.49%       0x00007f31d12380c0: mov    %eax,-0x14000(%rsp)
-  0.87%    0.72%       0x00007f31d12380c7: push   %rbp
-  0.38%    0.48%       0x00007f31d12380c8: sub    $0x60,%rsp         ;*synchronization entry
+  0.58%    0.77%       0x00007ff4f9216700: mov    %eax,-0x14000(%rsp)
+  0.80%    0.71%       0x00007ff4f9216707: push   %rbp
+  0.54%    0.69%       0x00007ff4f9216708: sub    $0x60,%rsp         ;*synchronization entry
                                                                      ; - com.google.re2j.Machine::add@-1 (line 341)
-  0.39%    0.20%       0x00007f31d12380cc: mov    %edi,0x28(%rsp)
-  0.68%    0.55%       0x00007f31d12380d0: mov    %r9,0x20(%rsp)
-  0.35%    0.52%       0x00007f31d12380d5: mov    %r8d,0x1c(%rsp)
-  0.07%    0.10%       0x00007f31d12380da: mov    %rsi,0x8(%rsp)
-  0.32%    0.16%       0x00007f31d12380df: test   %ecx,%ecx
-                       0x00007f31d12380e1: je     0x00007f31d1238582  ;*ifne
+  0.57%    0.56%       0x00007ff4f921670c: mov    %edi,0x28(%rsp)
+  0.26%    0.19%       0x00007ff4f9216710: mov    %r9,0x20(%rsp)
+  0.55%    0.54%       0x00007ff4f9216715: mov    %r8d,0x1c(%rsp)
+  0.07%    0.10%       0x00007ff4f921671a: mov    %rsi,0x8(%rsp)
+  0.47%    0.46%       0x00007ff4f921671f: test   %ecx,%ecx
+                       0x00007ff4f9216721: je     0x00007ff4f9216bc9  ;*ifne
                                                                      ; - com.google.re2j.Machine::add@1 (line 341)
-  0.65%    0.57%       0x00007f31d12380e7: mov    %rdx,0x40(%rsp)
-  0.38%    0.45%       0x00007f31d12380ec: mov    0x14(%rdx),%r11d   ;*getfield sparse
+  0.24%    0.26%       0x00007ff4f9216727: mov    %rdx,0x40(%rsp)
+  0.49%    0.71%       0x00007ff4f921672c: mov    0x14(%rdx),%r8d    ;*getfield sparse
                                                                      ; - com.google.re2j.Machine$Queue::contains@1 (line 48)
                                                                      ; - com.google.re2j.Machine::add@9 (line 344)
-                                                                     ; implicit exception: dispatches to 0x00007f31d1238785
-  0.08%    0.09%       0x00007f31d12380f0: mov    0xc(%r12,%r11,8),%edi  ; implicit exception: dispatches to 0x00007f31d1238799
-  0.33%    0.20%       0x00007f31d12380f5: cmp    %edi,%ecx
-                  ╭    0x00007f31d12380f7: jae    0x00007f31d123821d  ;*iaload
-                  │                                                  ; - com.google.re2j.Machine$Queue::contains@5 (line 48)
-                  │                                                  ; - com.google.re2j.Machine::add@9 (line 344)
-  0.62%    0.62%  │    0x00007f31d12380fd: mov    0x10(%rdx),%r9d    ;*getfield dense
-                  │                                                  ; - com.google.re2j.Machine$Queue::contains@18 (line 52)
-                  │                                                  ; - com.google.re2j.Machine::add@9 (line 344)
-  0.38%    0.65%  │    0x00007f31d1238101: mov    0xc(%rdx),%r8d     ;*getfield size
-                  │                                                  ; - com.google.re2j.Machine$Queue::contains@9 (line 49)
-                  │                                                  ; - com.google.re2j.Machine::add@9 (line 344)
-  0.11%    0.12%  │    0x00007f31d1238105: lea    (%r12,%r11,8),%rdx
-  0.30%    0.18%  │    0x00007f31d1238109: mov    0x10(%rdx,%rcx,4),%ebp  ;*iaload
-                  │                                                  ; - com.google.re2j.Machine$Queue::contains@5 (line 48)
-                  │                                                  ; - com.google.re2j.Machine::add@9 (line 344)
-  0.52%    0.70%  │    0x00007f31d123810d: cmp    %r8d,%ebp
-                  │╭   0x00007f31d1238110: jl     0x00007f31d12381f0  ;*iastore
-                  ││                                                 ; - com.google.re2j.Machine$Queue::add@18 (line 60)
-                  ││                                                 ; - com.google.re2j.Machine::add@20 (line 347)
-  0.40%    0.46%  ││↗  0x00007f31d1238116: mov    %r8d,%r10d
-  0.09%    0.09%  │││  0x00007f31d1238119: inc    %r10d
-  0.33%    0.15%  │││  0x00007f31d123811c: mov    0x40(%rsp),%rbx
-  1.01%    0.69%  │││  0x00007f31d1238121: mov    %r10d,0xc(%rbx)    ;*putfield size
+                                                                     ; implicit exception: dispatches to 0x00007ff4f9216dcd
+  0.07%    0.12%       0x00007ff4f9216730: mov    0xc(%r12,%r8,8),%ebx  ; implicit exception: dispatches to 0x00007ff4f9216de1
+  0.58%    0.40%       0x00007ff4f9216735: cmp    %ebx,%ecx
+                       0x00007ff4f9216737: jae    0x00007ff4f9216a92  ;*iaload
+                                                                     ; - com.google.re2j.Machine$Queue::contains@5 (line 48)
+                                                                     ; - com.google.re2j.Machine::add@9 (line 344)
+  0.22%    0.25%       0x00007ff4f921673d: mov    0x10(%rdx),%r9d    ;*getfield dense
+                                                                     ; - com.google.re2j.Machine$Queue::contains@18 (line 52)
+                                                                     ; - com.google.re2j.Machine::add@9 (line 344)
+  0.47%    0.61%       0x00007ff4f9216741: mov    0xc(%rdx),%r11d    ;*getfield size
+                                                                     ; - com.google.re2j.Machine$Queue::contains@9 (line 49)
+                                                                     ; - com.google.re2j.Machine::add@9 (line 344)
+  0.04%    0.12%       0x00007ff4f9216745: lea    (%r12,%r8,8),%rdi
+  0.55%    0.48%       0x00007ff4f9216749: mov    0x10(%rdi,%rcx,4),%ebp  ;*iaload
+                                                                     ; - com.google.re2j.Machine$Queue::contains@5 (line 48)
+                                                                     ; - com.google.re2j.Machine::add@9 (line 344)
+  0.22%    0.32%       0x00007ff4f921674d: cmp    %r11d,%ebp
+                  ╭    0x00007ff4f9216750: jl     0x00007ff4f9216834  ;*iastore
+                  │                                                  ; - com.google.re2j.Machine$Queue::add@18 (line 60)
+                  │                                                  ; - com.google.re2j.Machine::add@20 (line 347)
+  0.57%    0.55%  │↗↗  0x00007ff4f9216756: mov    %r11d,%r10d
+  0.07%    0.11%  │││  0x00007ff4f9216759: inc    %r10d
+  0.48%    0.34%  │││  0x00007ff4f921675c: mov    0x40(%rsp),%rdx
+  0.62%    0.46%  │││  0x00007ff4f9216761: mov    %r10d,0xc(%rdx)    ;*putfield size
                   │││                                                ; - com.google.re2j.Machine$Queue::add@8 (line 59)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.43%    0.32%  │││  0x00007f31d1238125: cmp    %edi,%ecx
-                  │││  0x00007f31d1238127: jae    0x00007f31d1238259
-  0.09%    0.12%  │││  0x00007f31d123812d: mov    %r8d,0x10(%rdx,%rcx,4)  ;*iastore
+  0.62%    0.66%  │││  0x00007ff4f9216765: cmp    %ebx,%ecx
+                  │││  0x00007ff4f9216767: jae    0x00007ff4f9216acd
+  0.08%    0.07%  │││  0x00007ff4f921676d: mov    %r11d,0x10(%rdi,%rcx,4)  ;*iastore
                   │││                                                ; - com.google.re2j.Machine$Queue::add@18 (line 60)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.26%    0.18%  │││  0x00007f31d1238132: mov    0xc(%r12,%r9,8),%r11d  ; implicit exception: dispatches to 0x00007f31d12387ad
-  0.58%    0.42%  │││  0x00007f31d1238137: cmp    %r11d,%r8d
-                  │││  0x00007f31d123813a: jae    0x00007f31d12382a5
-  0.37%    0.34%  │││  0x00007f31d1238140: lea    (%r12,%r9,8),%r10
-  0.08%    0.10%  │││  0x00007f31d1238144: mov    0x10(%r10,%r8,4),%r13d  ;*aaload
+  0.55%    0.33%  │││  0x00007ff4f9216772: mov    0xc(%r12,%r9,8),%r10d  ; implicit exception: dispatches to 0x00007ff4f9216df5
+  0.25%    0.19%  │││  0x00007ff4f9216777: cmp    %r10d,%r11d
+                  │││  0x00007ff4f921677a: jae    0x00007ff4f9216b19
+  0.56%    0.59%  │││  0x00007ff4f9216780: lea    (%r12,%r9,8),%r10
+  0.07%    0.06%  │││  0x00007ff4f9216784: mov    0x10(%r10,%r11,4),%ebx  ;*aaload
                   │││                                                ; - com.google.re2j.Machine$Queue::add@24 (line 61)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.29%    0.32%  │││  0x00007f31d1238149: test   %r13d,%r13d
-                  │││  0x00007f31d123814c: je     0x00007f31d12385a9  ;*ifnonnull
+  0.61%    0.66%  │││  0x00007ff4f9216789: test   %ebx,%ebx
+                  │││  0x00007ff4f921678b: je     0x00007ff4f9216bf1  ;*ifnonnull
                   │││                                                ; - com.google.re2j.Machine$Queue::add@27 (line 62)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.56%    0.58%  │││  0x00007f31d1238152: mov    %ecx,0xc(%r12,%r13,8)  ;*putfield pc
+  0.16%    0.18%  │││  0x00007ff4f9216791: mov    %ecx,0xc(%r12,%rbx,8)  ;*putfield pc
                   │││                                                ; - com.google.re2j.Machine$Queue::add@52 (line 66)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.48%    0.62%  │││  0x00007f31d1238157: mov    0x14(%rsi),%r11d   ;*getfield prog
+  0.81%    0.83%  │││  0x00007ff4f9216796: mov    0x14(%rsi),%r10d   ;*getfield prog
                   │││                                                ; - com.google.re2j.Machine::add@26 (line 348)
-  0.08%    0.11%  │││  0x00007f31d123815b: mov    %r12d,0x10(%r12,%r13,8)  ;*putfield thread
+  0.03%    0.05%  │││  0x00007ff4f921679a: mov    %r12d,0x10(%r12,%rbx,8)  ;*putfield thread
                   │││                                                ; - com.google.re2j.Machine$Queue::add@47 (line 65)
                   │││                                                ; - com.google.re2j.Machine::add@20 (line 347)
-  0.48%    0.52%  │││  0x00007f31d1238160: mov    0x14(%r12,%r11,8),%ebp  ;*getfield inst
+  0.62%    0.77%  │││  0x00007ff4f921679f: mov    0x14(%r12,%r10,8),%ebp  ;*getfield inst
                   │││                                                ; - com.google.re2j.Prog::getInst@1 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-                  │││                                                ; implicit exception: dispatches to 0x00007f31d12387c1
-  0.62%    0.73%  │││  0x00007f31d1238165: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007f31d12387d5
-  0.58%    0.76%  │││  0x00007f31d123816a: cmp    $0xf8002f22,%r10d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
-                  │││  0x00007f31d1238171: jne    0x00007f31d1238329
-  0.18%    0.20%  │││  0x00007f31d1238177: lea    (%r12,%rbp,8),%r10  ;*invokeinterface get
+                  │││                                                ; implicit exception: dispatches to 0x00007ff4f9216e09
+  0.13%    0.21%  │││  0x00007ff4f92167a4: mov    0x8(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007ff4f9216e1d
+  0.49%    0.57%  │││  0x00007ff4f92167a9: cmp    $0xf8002f22,%r11d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
+                  │││  0x00007ff4f92167b0: jne    0x00007ff4f9216b9d
+  0.07%    0.10%  │││  0x00007ff4f92167b6: lea    (%r12,%rbp,8),%r11  ;*invokeinterface get
                   │││                                                ; - com.google.re2j.Prog::getInst@5 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.39%    0.37%  │││  0x00007f31d123817b: mov    0x10(%r10),%ebp    ;*getfield size
+  0.57%    0.58%  │││  0x00007ff4f92167ba: mov    0x10(%r11),%ebp    ;*getfield size
                   │││                                                ; - java.util.ArrayList::rangeCheck@2 (line 652)
                   │││                                                ; - java.util.ArrayList::get@2 (line 429)
                   │││                                                ; - com.google.re2j.Prog::getInst@5 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.52%    0.49%  │││  0x00007f31d123817f: cmp    %ebp,%ecx
-                  │││  0x00007f31d1238181: jge    0x00007f31d12385f1  ;*if_icmplt
+  0.15%    0.16%  │││  0x00007ff4f92167be: cmp    %ebp,%ecx
+  0.55%    0.57%  │││  0x00007ff4f92167c0: jge    0x00007ff4f9216c35  ;*if_icmplt
                   │││                                                ; - java.util.ArrayList::rangeCheck@5 (line 652)
                   │││                                                ; - java.util.ArrayList::get@2 (line 429)
                   │││                                                ; - com.google.re2j.Prog::getInst@5 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.57%    0.76%  │││  0x00007f31d1238187: mov    0x14(%r10),%ebp    ;*getfield elementData
+  0.15%    0.10%  │││  0x00007ff4f92167c6: mov    0x14(%r11),%ebp    ;*getfield elementData
                   │││                                                ; - java.util.ArrayList::elementData@1 (line 418)
                   │││                                                ; - java.util.ArrayList::get@7 (line 431)
                   │││                                                ; - com.google.re2j.Prog::getInst@5 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.07%    0.03%  │││  0x00007f31d123818b: mov    0xc(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007f31d12387e9
-  1.24%    1.08%  │││  0x00007f31d1238190: cmp    %r10d,%ecx
-                  │││  0x00007f31d1238193: jae    0x00007f31d12382ed
-  1.06%    1.32%  │││  0x00007f31d1238199: lea    (%r12,%rbp,8),%r10
-  0.18%    0.20%  │││  0x00007f31d123819d: mov    0x10(%r10,%rcx,4),%ebp  ;*aaload
+  0.60%    0.44%  │││  0x00007ff4f92167ca: mov    0xc(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007ff4f9216e31
+  0.51%    0.62%  │││  0x00007ff4f92167cf: cmp    %r11d,%ecx
+                  │││  0x00007ff4f92167d2: jae    0x00007ff4f9216b61
+  0.97%    1.11%  │││  0x00007ff4f92167d8: lea    (%r12,%rbp,8),%r10
+  0.02%    0.04%  │││  0x00007ff4f92167dc: mov    0x10(%r10,%rcx,4),%ebp  ;*aaload
                   │││                                                ; - java.util.ArrayList::elementData@5 (line 418)
                   │││                                                ; - java.util.ArrayList::get@7 (line 431)
                   │││                                                ; - com.google.re2j.Prog::getInst@5 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.59%    0.57%  │││  0x00007f31d12381a2: mov    0x8(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007f31d12387fd
-  3.48%    3.36%  │││  0x00007f31d12381a7: cmp    $0xf80197c3,%r11d  ;   {metadata(&apos;com/google/re2j/Inst&apos;)}
-                  │││  0x00007f31d12381ae: jne    0x00007f31d1238749
-  0.93%    0.99%  │││  0x00007f31d12381b4: lea    (%r12,%rbp,8),%r10  ;*checkcast
+  0.51%    0.33%  │││  0x00007ff4f92167e1: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007ff4f9216e45
+  3.17%    3.17%  │││  0x00007ff4f92167e6: cmp    $0xf80197c3,%r10d  ;   {metadata(&apos;com/google/re2j/Inst&apos;)}
+                  │││  0x00007ff4f92167ed: jne    0x00007ff4f9216d91
+  0.97%    0.96%  │││  0x00007ff4f92167f3: lea    (%r12,%rbp,8),%r10  ;*checkcast
                   │││                                                ; - com.google.re2j.Prog::getInst@10 (line 29)
                   │││                                                ; - com.google.re2j.Machine::add@30 (line 348)
-  0.06%    0.05%  │││  0x00007f31d12381b8: mov    %r10,0x38(%rsp)
-  0.02%    0.02%  │││  0x00007f31d12381bd: mov    0xc(%r10),%r8d     ;*getfield op
+  0.03%    0.00%  │││  0x00007ff4f92167f7: mov    %r10,0x38(%rsp)
+  0.21%    0.24%  │││  0x00007ff4f92167fc: mov    0xc(%r10),%r10d    ;*getfield op
                   │││                                                ; - com.google.re2j.Machine::add@37 (line 349)
-  0.23%    0.13%  │││  0x00007f31d12381c1: mov    %r8d,%r10d
-  0.97%    1.05%  │││  0x00007f31d12381c4: dec    %r10d
-  0.13%    0.10%  │││  0x00007f31d12381c7: cmp    $0xb,%r10d
-                  │││  0x00007f31d12381cb: jae    0x00007f31d1238319  ;*tableswitch
+  0.64%    0.75%  │││  0x00007ff4f9216800: mov    %r10d,%r11d
+  0.36%    0.34%  │││  0x00007ff4f9216803: dec    %r11d
+  0.67%    0.66%  │││  0x00007ff4f9216806: cmp    $0xb,%r11d
+                  │││  0x00007ff4f921680a: jae    0x00007ff4f9216b8d  ;*tableswitch
                   │││                                                ; - com.google.re2j.Machine::add@40 (line 349)
-  0.88%    0.90%  │││  0x00007f31d12381d1: mov    0x38(%rsp),%r10
-  0.21%    0.19%  │││  0x00007f31d12381d6: mov    0x14(%r10),%r11d   ;*getfield arg
+  1.14%    1.20%  │││  0x00007ff4f9216810: mov    0x38(%rsp),%r11
+  0.24%    0.08%  │││  0x00007ff4f9216815: mov    0x14(%r11),%r11d   ;*getfield arg
                   │││                                                ; - com.google.re2j.Machine::add@156 (line 363)
-  2.75%    3.16%  │││  0x00007f31d12381da: mov    0x10(%r10),%ecx    ;*getfield out
+  2.63%    2.97%  │││  0x00007ff4f9216819: mov    0x38(%rsp),%r8
+  0.04%    0.06%  │││  0x00007ff4f921681e: mov    0x10(%r8),%ecx     ;*getfield out
                   │││                                                ; - com.google.re2j.Machine::add@193 (line 369)
-  0.04%    0.02%  │││  0x00007f31d12381de: movslq %r8d,%r8
-  0.01%    0.01%  │││  0x00007f31d12381e1: movabs $0x7f31d1238040,%r10  ;   {section_word}
-  0.19%    0.04%  │││  0x00007f31d12381eb: jmpq   *-0x8(%r10,%r8,8)  ;*tableswitch
+  1.25%    1.55%  │││  0x00007ff4f9216822: movslq %r10d,%r8
+  0.04%    0.06%  │││  0x00007ff4f9216825: movabs $0x7ff4f9216680,%r10  ;   {section_word}
+  0.08%    0.08%  │││  0x00007ff4f921682f: jmpq   *-0x8(%r10,%r8,8)  ;*tableswitch
                   │││                                                ; - com.google.re2j.Machine::add@40 (line 349)
-  0.00%           │↘│  0x00007f31d12381f0: mov    0xc(%r12,%r9,8),%ebx  ; implicit exception: dispatches to 0x00007f31d12388a5
-  0.00%           │ │  0x00007f31d12381f5: cmp    %ebx,%ebp
-                  │ │  0x00007f31d12381f7: jae    0x00007f31d1238731
-           0.00%  │ │  0x00007f31d12381fd: lea    (%r12,%r9,8),%r10
-           0.00%  │ │  0x00007f31d1238201: mov    0x10(%r10,%rbp,4),%ebp  ;*aaload
-                  │ │                                                ; - com.google.re2j.Machine$Queue::contains@22 (line 52)
-                  │ │                                                ; - com.google.re2j.Machine::add@9 (line 344)
-           0.00%  │ │  0x00007f31d1238206: mov    0xc(%r12,%rbp,8),%ebx  ; implicit exception: dispatches to 0x00007f31d12388b5
-  0.05%    0.01%  │ │  0x00007f31d123820b: cmp    %ecx,%ebx
-                  │ ╰  0x00007f31d123820d: jne    0x00007f31d1238116
-                  │    0x00007f31d1238213: mov    0x70(%rsp),%rax
-                  │    0x00007f31d1238218: jmpq   0x00007f31d1238558
-                  ↘    0x00007f31d123821d: mov    $0xffffffe4,%esi
-                       0x00007f31d1238222: mov    0x8(%rsp),%rbp
-                       0x00007f31d1238227: mov    %r8d,0x14(%rsp)
-                       0x00007f31d123822c: mov    %r9,0x18(%rsp)
-                       0x00007f31d1238231: mov    0x28(%rsp),%r8d
-                       0x00007f31d1238236: mov    %r8d,0x20(%rsp)
-                       0x00007f31d123823b: mov    %rdx,0x28(%rsp)
+           0.00%  ↘││  0x00007ff4f9216834: mov    0xc(%r12,%r9,8),%edx  ; implicit exception: dispatches to 0x00007ff4f9216ee5
+                   ││  0x00007ff4f9216839: cmp    %edx,%ebp
+                   ││  0x00007ff4f921683b: jae    0x00007ff4f9216d79
+                   ││  0x00007ff4f9216841: lea    (%r12,%r9,8),%r10
+                   ││  0x00007ff4f9216845: mov    0x10(%r10,%rbp,4),%r10d  ;*aaload
+                   ││                                                ; - com.google.re2j.Machine$Queue::contains@22 (line 52)
+                   ││                                                ; - com.google.re2j.Machine::add@9 (line 344)
+  0.02%            ││  0x00007ff4f921684a: test   %r10d,%r10d
+                   ╰│  0x00007ff4f921684d: je     0x00007ff4f9216756  ;*ifnull
+                    │                                                ; - com.google.re2j.Machine$Queue::contains@25 (line 53)
+                    │                                                ; - com.google.re2j.Machine::add@9 (line 344)
+                    │  0x00007ff4f9216853: mov    0xc(%r12,%r10,8),%r10d
+  0.01%    0.01%    │  0x00007ff4f9216858: cmp    %ecx,%r10d
+                    ╰  0x00007ff4f921685b: jne    0x00007ff4f9216756  ;*if_icmpne
+                                                                     ; - com.google.re2j.Machine$Queue::contains@33 (line 53)
+                                                                     ; - com.google.re2j.Machine::add@9 (line 344)
+                       0x00007ff4f9216861: mov    0x70(%rsp),%rax
+                       0x00007ff4f9216866: jmpq   0x00007ff4f9216a68
+                       0x00007ff4f921686b: mov    0x28(%rsp),%ebx
+                       0x00007ff4f921686f: andn   %r11d,%ebx,%r11d
+                       0x00007ff4f9216874: test   %r11d,%r11d
+                       0x00007ff4f9216877: je     0x00007ff4f9216a74  ;*ifne
+                                                                     ; - com.google.re2j.Machine::add@164 (line 363)
 ....................................................................................................
- 28.38%   28.37%  <total for region 1>
+ 29.09%   30.11%  <total for region 1>
 
 ....[Hottest Region 2]..............................................................................
-C2, level 4, com.google.re2j.Machine::step, version 530 (549 bytes) 
+C2, level 4, com.google.re2j.Machine::step, version 499 (549 bytes) 
 
                               # parm6:    [sp+0x98]   = int
                               # parm7:    [sp+0xa0]   = boolean
-                              0x00007f31d1244120: mov    0x8(%rsi),%r10d
-                              0x00007f31d1244124: shl    $0x3,%r10
-                              0x00007f31d1244128: cmp    %r10,%rax
-                              0x00007f31d124412b: jne    0x00007f31d1045e20  ;   {runtime_call}
-                              0x00007f31d1244131: data16 xchg %ax,%ax
-                              0x00007f31d1244134: nopl   0x0(%rax,%rax,1)
-                              0x00007f31d124413c: data16 data16 xchg %ax,%ax
+                              0x00007ff4f921eae0: mov    0x8(%rsi),%r10d
+                              0x00007ff4f921eae4: shl    $0x3,%r10
+                              0x00007ff4f921eae8: cmp    %r10,%rax
+                              0x00007ff4f921eaeb: jne    0x00007ff4f9045e20  ;   {runtime_call}
+                              0x00007ff4f921eaf1: data16 xchg %ax,%ax
+                              0x00007ff4f921eaf4: nopl   0x0(%rax,%rax,1)
+                              0x00007ff4f921eafc: data16 data16 xchg %ax,%ax
                             [Verified Entry Point]
-  0.07%    0.03%              0x00007f31d1244140: mov    %eax,-0x14000(%rsp)
-  0.07%    0.07%              0x00007f31d1244147: push   %rbp
-  0.03%    0.01%              0x00007f31d1244148: sub    $0x80,%rsp         ;*synchronization entry
+  0.06%    0.04%              0x00007ff4f921eb00: mov    %eax,-0x14000(%rsp)
+  0.12%    0.13%              0x00007ff4f921eb07: push   %rbp
+  0.05%    0.01%              0x00007ff4f921eb08: sub    $0x80,%rsp         ;*synchronization entry
                                                                             ; - com.google.re2j.Machine::step@-1 (line 263)
-  0.03%    0.01%              0x00007f31d124414f: mov    %edi,0x20(%rsp)
-  0.08%    0.20%              0x00007f31d1244153: mov    %r9d,0x14(%rsp)
-  0.02%    0.03%              0x00007f31d1244158: mov    %rcx,0x18(%rsp)
-  0.03%    0.03%              0x00007f31d124415d: mov    %r8d,0x10(%rsp)
-  0.04%    0.02%              0x00007f31d1244162: mov    %rdx,0x8(%rsp)
-  0.10%    0.15%              0x00007f31d1244167: mov    %rsi,0x28(%rsp)
-  0.03%                       0x00007f31d124416c: mov    0x10(%rsi),%r10d   ;*getfield re2
+  0.05%    0.03%              0x00007ff4f921eb0f: mov    %edi,0x20(%rsp)
+  0.20%    0.13%              0x00007ff4f921eb13: mov    %r9d,0x14(%rsp)
+  0.03%                       0x00007ff4f921eb18: mov    %rcx,0x18(%rsp)
+  0.05%    0.03%              0x00007ff4f921eb1d: mov    %r8d,0x10(%rsp)
+  0.02%    0.01%              0x00007ff4f921eb22: mov    %rdx,0x8(%rsp)
+  0.15%    0.16%              0x00007ff4f921eb27: mov    %rsi,0x28(%rsp)
+  0.03%    0.00%              0x00007ff4f921eb2c: mov    0x10(%rsi),%r10d   ;*getfield re2
                                                                             ; - com.google.re2j.Machine::step@1 (line 263)
-  0.02%    0.02%              0x00007f31d1244170: movzbl 0x18(%r12,%r10,8),%r11d  ;*getfield longest
+  0.03%    0.03%              0x00007ff4f921eb30: movzbl 0x18(%r12,%r10,8),%r11d  ;*getfield longest
                                                                             ; - com.google.re2j.Machine::step@4 (line 263)
-                                                                            ; implicit exception: dispatches to 0x00007f31d12456a9
-  0.02%    0.01%              0x00007f31d1244176: mov    %r11d,0x24(%rsp)
-  0.18%    0.11%              0x00007f31d124417b: mov    0xc(%rdx),%r11d    ; implicit exception: dispatches to 0x00007f31d12456b9
-  0.02%    0.00%              0x00007f31d124417f: test   %r11d,%r11d
-                              0x00007f31d1244182: jle    0x00007f31d1244514  ;*if_icmpge
+                                                                            ; implicit exception: dispatches to 0x00007ff4f9220069
+  0.01%    0.01%              0x00007ff4f921eb36: mov    %r11d,0x24(%rsp)
+  0.16%    0.11%              0x00007ff4f921eb3b: mov    0xc(%rdx),%r11d    ; implicit exception: dispatches to 0x00007ff4f9220079
+  0.03%    0.01%              0x00007ff4f921eb3f: test   %r11d,%r11d
+                              0x00007ff4f921eb42: jle    0x00007ff4f921eed4  ;*if_icmpge
                                                                             ; - com.google.re2j.Machine::step@18 (line 264)
-  0.01%    0.05%              0x00007f31d1244188: xor    %r8d,%r8d
-  0.00%    0.01%  ╭           0x00007f31d124418b: jmpq   0x00007f31d124427c
-  0.26%    0.20%  │  ↗        0x00007f31d1244190: mov    0xc(%r12,%rcx,8),%ebx  ; implicit exception: dispatches to 0x00007f31d1245699
-  1.52%    1.63%  │  │        0x00007f31d1244195: test   %ebx,%ebx
-                  │  │        0x00007f31d1244197: jbe    0x00007f31d1244e81  ;*iaload
+  0.02%    0.04%              0x00007ff4f921eb48: xor    %r8d,%r8d
+  0.00%    0.02%  ╭           0x00007ff4f921eb4b: jmpq   0x00007ff4f921ec3c
+  0.30%    0.34%  │  ↗        0x00007ff4f921eb50: mov    0xc(%r12,%rcx,8),%ebx  ; implicit exception: dispatches to 0x00007ff4f9220059
+  1.38%    2.03%  │  │        0x00007ff4f921eb55: test   %ebx,%ebx
+                  │  │        0x00007ff4f921eb57: jbe    0x00007ff4f921f841  ;*iaload
                   │  │                                                      ; - com.google.re2j.Machine::step@324 (line 310)
-  0.33%    0.43%  │  │        0x00007f31d124419d: mov    0x10(%r12,%rcx,8),%r11d
-                  │  │        0x00007f31d12441a2: mov    0x20(%rsp),%ecx
-                  │  │        0x00007f31d12441a6: cmp    %r11d,%ecx
-                  │  │        0x00007f31d12441a9: je     0x00007f31d1244b08  ;*goto
+  0.33%    0.38%  │  │        0x00007ff4f921eb5d: mov    0x10(%r12,%rcx,8),%r11d
+  0.01%    0.01%  │  │        0x00007ff4f921eb62: mov    0x20(%rsp),%ecx
+                  │  │        0x00007ff4f921eb66: cmp    %r11d,%ecx
+                  │  │        0x00007ff4f921eb69: je     0x00007ff4f921f4c8  ;*goto
                   │  │                                                      ; - com.google.re2j.Machine::step@313 (line 307)
-  0.39%    0.32%  │  │    ↗   0x00007f31d12441af: mov    %r10,0x50(%rsp)    ;*aload
+  0.52%    0.58%  │  │    ↗   0x00007ff4f921eb6f: mov    %r10,0x50(%rsp)    ;*aload
                   │  │    │                                                 ; - com.google.re2j.Machine::step@399 (line 327)
-  0.13%    0.28%  │  │   ↗│   0x00007f31d12441b4: mov    0x28(%rsp),%r10
-           0.01%  │  │   ││   0x00007f31d12441b9: mov    0x20(%r10),%ebp    ;*getfield pool
+  0.12%    0.09%  │  │   ↗│   0x00007ff4f921eb74: mov    0x28(%rsp),%r10
+  0.00%           │  │   ││   0x00007ff4f921eb79: mov    0x20(%r10),%ebp    ;*getfield pool
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@405 (line 329)
-  0.01%    0.00%  │  │   ││   0x00007f31d12441bd: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007f31d12455d5
-  0.78%    0.81%  │  │   ││   0x00007f31d12441c2: cmp    $0xf8002f22,%r10d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
-                  │  │   ││   0x00007f31d12441c9: jne    0x00007f31d1244c7d
-  0.11%    0.20%  │  │   ││   0x00007f31d12441cf: lea    (%r12,%rbp,8),%r9  ;*invokeinterface add
+  0.00%    0.00%  │  │   ││   0x00007ff4f921eb7d: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007ff4f921ff95
+  0.47%    0.57%  │  │   ││   0x00007ff4f921eb82: cmp    $0xf8002f22,%r10d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
+                  │  │   ││   0x00007ff4f921eb89: jne    0x00007ff4f921f63d
+  0.06%    0.08%  │  │   ││   0x00007ff4f921eb8f: lea    (%r12,%rbp,8),%r9  ;*invokeinterface add
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-           0.00%  │  │   ││   0x00007f31d12441d3: mov    0x14(%r9),%edx     ;*getfield elementData
+                  │  │   ││   0x00007ff4f921eb93: mov    0x14(%r9),%edx     ;*getfield elementData
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@1 (line 223)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.01%    0.02%  │  │   ││   0x00007f31d12441d7: mov    0x10(%r9),%ebp     ;*getfield size
+                  │  │   ││   0x00007ff4f921eb97: mov    0x10(%r9),%ebp     ;*getfield size
                   │  │   ││                                                 ; - java.util.ArrayList::add@2 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.76%    1.04%  │  │   ││   0x00007f31d12441db: mov    %ebp,%r11d
-  0.07%    0.09%  │  │   ││   0x00007f31d12441de: inc    %r11d              ;*iadd
+  0.46%    0.55%  │  │   ││   0x00007ff4f921eb9b: mov    %ebp,%r11d
+  0.06%    0.08%  │  │   ││   0x00007ff4f921eb9e: inc    %r11d              ;*iadd
                   │  │   ││                                                 ; - java.util.ArrayList::add@6 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.06%    0.11%  │  │   ││   0x00007f31d12441e1: cmp    $0xed9f0db7,%edx   ;   {oop(a &apos;java/lang/Object&apos;[0] )}
-                  │  │   ││   0x00007f31d12441e7: je     0x00007f31d1244ae8  ;*if_acmpne
+                  │  │   ││   0x00007ff4f921eba1: cmp    $0xed9f0db7,%edx   ;   {oop(a &apos;java/lang/Object&apos;[0] )}
+                  │  │   ││   0x00007ff4f921eba7: je     0x00007ff4f921f4a8  ;*if_acmpne
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@7 (line 223)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-           0.01%  │  │   ││   0x00007f31d12441ed: mov    %r11d,%esi         ;*aload_0
+                  │  │   ││   0x00007ff4f921ebad: mov    %r11d,%esi         ;*aload_0
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@17 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.42%    0.48%  │  │   ││   0x00007f31d12441f0: mov    0xc(%r9),%ebx      ;*getfield modCount
+  0.53%    0.49%  │  │   ││   0x00007ff4f921ebb0: mov    0xc(%r9),%ebx      ;*getfield modCount
                   │  │   ││                                                 ; - java.util.ArrayList::ensureExplicitCapacity@2 (line 231)
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@19 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.11%    0.14%  │  │   ││   0x00007f31d12441f4: inc    %ebx
-  0.05%    0.12%  │  │   ││   0x00007f31d12441f6: mov    %ebx,0xc(%r9)      ;*putfield modCount
+  0.08%    0.13%  │  │   ││   0x00007ff4f921ebb4: inc    %ebx
+  0.00%    0.00%  │  │   ││   0x00007ff4f921ebb6: mov    %ebx,0xc(%r9)      ;*putfield modCount
                   │  │   ││                                                 ; - java.util.ArrayList::ensureExplicitCapacity@7 (line 231)
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@19 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.09%    0.09%  │  │   ││   0x00007f31d12441fa: mov    0xc(%r12,%rdx,8),%eax  ;*arraylength
+                  │  │   ││   0x00007ff4f921ebba: mov    0xc(%r12,%rdx,8),%eax  ;*arraylength
                   │  │   ││                                                 ; - java.util.ArrayList::ensureExplicitCapacity@15 (line 234)
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@19 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-                  │  │   ││                                                 ; implicit exception: dispatches to 0x00007f31d12455e5
-  0.45%    0.53%  │  │   ││   0x00007f31d12441ff: mov    %esi,%r10d
-  0.04%    0.03%  │  │   ││   0x00007f31d1244202: sub    %eax,%r10d
-  0.24%    0.25%  │  │   ││   0x00007f31d1244205: test   %r10d,%r10d
-                  │  │   ││   0x00007f31d1244208: jg     0x00007f31d124484e  ;*ifle
+                  │  │   ││                                                 ; implicit exception: dispatches to 0x00007ff4f921ffa5
+  0.45%    0.47%  │  │   ││   0x00007ff4f921ebbf: mov    %esi,%r10d
+  0.07%    0.08%  │  │   ││   0x00007ff4f921ebc2: sub    %eax,%r10d
+  0.01%    0.00%  │  │   ││   0x00007ff4f921ebc5: test   %r10d,%r10d
+                  │  │   ││   0x00007ff4f921ebc8: jg     0x00007ff4f921f20e  ;*ifle
                   │  │   ││                                                 ; - java.util.ArrayList::ensureExplicitCapacity@17 (line 234)
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@19 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.11%    0.12%  │  │   ││   0x00007f31d124420e: mov    %rdx,%r10
-  0.36%    0.40%  │  │   ││   0x00007f31d1244211: shl    $0x3,%r10          ;*return
+  0.01%    0.02%  │  │   ││   0x00007ff4f921ebce: mov    %rdx,%r10
+  0.38%    0.40%  │  │   ││   0x00007ff4f921ebd1: shl    $0x3,%r10          ;*return
                   │  │   ││                                                 ; - java.util.ArrayList::ensureExplicitCapacity@25 (line 236)
                   │  │   ││                                                 ; - java.util.ArrayList::ensureCapacityInternal@19 (line 227)
                   │  │   ││                                                 ; - java.util.ArrayList::add@7 (line 458)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.02%    0.06%  │  │   ││   0x00007f31d1244215: mov    %r11d,0x10(%r9)    ;*putfield size
+  0.08%    0.11%  │  │   ││   0x00007ff4f921ebd5: mov    %r11d,0x10(%r9)    ;*putfield size
                   │  │   ││                                                 ; - java.util.ArrayList::add@22 (line 459)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.06%    0.05%  │  │   ││   0x00007f31d1244219: mov    0xc(%r10),%r11d    ; implicit exception: dispatches to 0x00007f31d12455f5
-  0.10%    0.15%  │  │   ││   0x00007f31d124421d: cmp    %r11d,%ebp
-                  │  │   ││   0x00007f31d1244220: jae    0x00007f31d1244c39
-  0.38%    0.40%  │  │   ││   0x00007f31d1244226: mov    0x8(%r10),%r11d
-           0.03%  │  │   ││   0x00007f31d124422a: cmp    $0xf80022f5,%r11d  ;   {metadata(&apos;java/lang/Object&apos;[])}
-                  │  │   ││   0x00007f31d1244231: jne    0x00007f31d1244cb9
-  0.13%    0.08%  │  │   ││   0x00007f31d1244237: lea    0x10(%r10,%rbp,4),%r10
-  0.03%    0.06%  │  │   ││   0x00007f31d124423c: mov    0x50(%rsp),%r11
-  0.34%    0.33%  │  │   ││   0x00007f31d1244241: shr    $0x3,%r11
-  0.02%    0.02%  │  │   ││   0x00007f31d1244245: mov    %r11d,(%r10)
-  0.35%    0.36%  │  │   ││   0x00007f31d1244248: shr    $0x9,%r10
-           0.01%  │  │   ││   0x00007f31d124424c: movabs $0x7f31e205c000,%r11
-  0.32%    0.24%  │  │   ││   0x00007f31d1244256: mov    %r12b,(%r11,%r10,1)  ;*aastore
+  0.00%           │  │   ││   0x00007ff4f921ebd9: mov    0xc(%r10),%r11d    ; implicit exception: dispatches to 0x00007ff4f921ffb5
+  0.00%    0.00%  │  │   ││   0x00007ff4f921ebdd: cmp    %r11d,%ebp
+                  │  │   ││   0x00007ff4f921ebe0: jae    0x00007ff4f921f5f9
+  0.56%    0.40%  │  │   ││   0x00007ff4f921ebe6: mov    0x8(%r10),%r11d
+  0.05%    0.10%  │  │   ││   0x00007ff4f921ebea: cmp    $0xf80022f5,%r11d  ;   {metadata(&apos;java/lang/Object&apos;[])}
+                  │  │   ││   0x00007ff4f921ebf1: jne    0x00007ff4f921f679
+  0.00%           │  │   ││   0x00007ff4f921ebf7: lea    0x10(%r10,%rbp,4),%r10
+                  │  │   ││   0x00007ff4f921ebfc: mov    0x50(%rsp),%r11
+  0.45%    0.28%  │  │   ││   0x00007ff4f921ec01: shr    $0x3,%r11
+  0.09%    0.10%  │  │   ││   0x00007ff4f921ec05: mov    %r11d,(%r10)
+  0.00%           │  │   ││   0x00007ff4f921ec08: shr    $0x9,%r10
+                  │  │   ││   0x00007ff4f921ec0c: movabs $0x7ff50a6cc000,%r11
+  0.42%    0.26%  │  │   ││   0x00007ff4f921ec16: mov    %r12b,(%r11,%r10,1)  ;*aastore
                   │  │   ││                                                 ; - java.util.ArrayList::add@26 (line 459)
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@410 (line 329)
-  0.19%    0.21%  │  │   ││   0x00007f31d124425a: xor    %r11d,%r11d        ; OopMap{[8]=Oop [24]=Oop [40]=Oop off=317}
+  0.12%    0.08%  │  │   ││   0x00007ff4f921ec1a: xor    %r11d,%r11d        ; OopMap{[8]=Oop [24]=Oop [40]=Oop off=317}
                   │  │   ││                                                 ;*goto
                   │  │   ││                                                 ; - com.google.re2j.Machine::step@419 (line 264)
-  0.01%    0.00%  │ ↗│  ↗││   0x00007f31d124425d: test   %eax,0x1840fd9d(%rip)        # 0x00007f31e9654000
+                  │ ↗│  ↗││   0x00007ff4f921ec1d: test   %eax,0x18aa53dd(%rip)        # 0x00007ff511cc4000
                   │ ││  │││                                                 ;*goto
                   │ ││  │││                                                 ; - com.google.re2j.Machine::step@419 (line 264)
                   │ ││  │││                                                 ;   {poll}
-  0.54%    0.73%  │ ││  │││   0x00007f31d1244263: mov    0x8(%rsp),%r10
-  0.57%    0.32%  │ ││  │││   0x00007f31d1244268: mov    0xc(%r10),%r11d
-  0.17%    0.17%  │ ││  │││   0x00007f31d124426c: cmp    %r11d,%edi
-                  │ ││  │││   0x00007f31d124426f: jge    0x00007f31d1244514
-           0.00%  │ ││  │││   0x00007f31d1244275: mov    %ecx,0x20(%rsp)
-  0.54%    0.50%  │ ││  │││   0x00007f31d1244279: mov    %edi,%r8d          ;*aload_1
+  0.58%    0.59%  │ ││  │││   0x00007ff4f921ec23: mov    0x8(%rsp),%r10
+  0.70%    0.39%  │ ││  │││   0x00007ff4f921ec28: mov    0xc(%r10),%r11d
+  0.15%    0.14%  │ ││  │││   0x00007ff4f921ec2c: cmp    %r11d,%edi
+                  │ ││  │││   0x00007ff4f921ec2f: jge    0x00007ff4f921eed4
+  0.00%    0.01%  │ ││  │││   0x00007ff4f921ec35: mov    %ecx,0x20(%rsp)
+  0.66%    0.43%  │ ││  │││   0x00007ff4f921ec39: mov    %edi,%r8d          ;*aload_1
                   │ ││  │││                                                 ; - com.google.re2j.Machine::step@21 (line 265)
-  0.52%    0.27%  ↘ ││  │││   0x00007f31d124427c: mov    0x8(%rsp),%r10
-  0.25%    0.24%    ││  │││   0x00007f31d1244281: mov    0x10(%r10),%r10d   ;*getfield dense
+  0.54%    0.36%  ↘ ││  │││   0x00007ff4f921ec3c: mov    0x8(%rsp),%r10
+  0.14%    0.14%    ││  │││   0x00007ff4f921ec41: mov    0x10(%r10),%r10d   ;*getfield dense
                     ││  │││                                                 ; - com.google.re2j.Machine::step@22 (line 265)
-  0.40%    0.48%    ││  │││   0x00007f31d1244285: mov    0xc(%r12,%r10,8),%r9d  ; implicit exception: dispatches to 0x00007f31d12455a1
-  1.34%    1.42%    ││  │││   0x00007f31d124428a: cmp    %r9d,%r8d
-                    ││  │││   0x00007f31d124428d: jae    0x00007f31d1244b67
-  0.69%    0.77%    ││  │││   0x00007f31d1244293: shl    $0x3,%r10
-  0.12%    0.17%    ││  │││   0x00007f31d1244297: mov    0x10(%r10,%r8,4),%r10d  ;*aaload
+  0.30%    0.17%    ││  │││   0x00007ff4f921ec45: mov    0xc(%r12,%r10,8),%r9d  ; implicit exception: dispatches to 0x00007ff4f921ff61
+  1.16%    1.37%    ││  │││   0x00007ff4f921ec4a: cmp    %r9d,%r8d
+                    ││  │││   0x00007ff4f921ec4d: jae    0x00007ff4f921f527
+  0.80%    0.74%    ││  │││   0x00007ff4f921ec53: shl    $0x3,%r10
+  0.08%    0.14%    ││  │││   0x00007ff4f921ec57: mov    0x10(%r10,%r8,4),%r10d  ;*aaload
                     ││  │││                                                 ; - com.google.re2j.Machine::step@27 (line 265)
-  0.04%    0.03%    ││  │││   0x00007f31d124429c: mov    0x10(%r12,%r10,8),%r11d  ;*getfield thread
+  0.06%    0.07%    ││  │││   0x00007ff4f921ec5c: mov    0x10(%r12,%r10,8),%r11d  ;*getfield thread
                     ││  │││                                                 ; - com.google.re2j.Machine::step@40 (line 269)
-                    ││  │││                                                 ; implicit exception: dispatches to 0x00007f31d1245615
-  1.99%    2.17%    ││  │││   0x00007f31d12442a1: mov    %r8d,%edi
-  0.33%    0.32%    ││  │││   0x00007f31d12442a4: inc    %edi               ;*iadd
+                    ││  │││                                                 ; implicit exception: dispatches to 0x00007ff4f921ffd5
+  1.98%    2.55%    ││  │││   0x00007ff4f921ec61: mov    %r8d,%edi
+  0.45%    0.34%    ││  │││   0x00007ff4f921ec64: inc    %edi               ;*iadd
                     ││  │││                                                 ; - com.google.re2j.Machine::step@241 (line 293)
-  0.20%    0.17%    ││  │││   0x00007f31d12442a6: test   %r11d,%r11d
-                   ╭││  │││   0x00007f31d12442a9: jne    0x00007f31d12442b6  ;*ifnonnull
+  0.06%    0.13%    ││  │││   0x00007ff4f921ec66: test   %r11d,%r11d
+                   ╭││  │││   0x00007ff4f921ec69: jne    0x00007ff4f921ec76  ;*ifnonnull
                    │││  │││                                                 ; - com.google.re2j.Machine::step@47 (line 270)
-  0.40%    0.33%   │││  │││   0x00007f31d12442ab: mov    0x24(%rsp),%r11d
-  0.23%    0.19%   │││  │││   0x00007f31d12442b0: mov    0x20(%rsp),%ecx
-  0.02%    0.01%   │╰│  │││   0x00007f31d12442b4: jmp    0x00007f31d124425d
-  0.04%    0.05%   ↘ │  │││   0x00007f31d12442b6: mov    0x24(%rsp),%r9d
-  0.18%    0.14%     │  │││   0x00007f31d12442bb: test   %r9d,%r9d
-                     │  │││   0x00007f31d12442be: jne    0x00007f31d1244ecd  ;*ifeq
+  0.31%    0.34%   │││  │││   0x00007ff4f921ec6b: mov    0x24(%rsp),%r11d
+  0.19%    0.17%   │││  │││   0x00007ff4f921ec70: mov    0x20(%rsp),%ecx
+  0.02%    0.01%   │╰│  │││   0x00007ff4f921ec74: jmp    0x00007ff4f921ec1d
+  0.07%    0.09%   ↘ │  │││   0x00007ff4f921ec76: mov    0x24(%rsp),%r9d
+  0.22%    0.17%     │  │││   0x00007ff4f921ec7b: test   %r9d,%r9d
+                     │  │││   0x00007ff4f921ec7e: jne    0x00007ff4f921f88d  ;*ifeq
                      │  │││                                                 ; - com.google.re2j.Machine::step@55 (line 273)
-  0.39%    0.22%     │  │││   0x00007f31d12442c4: mov    0x10(%r12,%r11,8),%r9d  ;*getfield inst
+  0.50%    0.26%     │  │││   0x00007ff4f921ec84: mov    0x10(%r12,%r11,8),%r9d  ;*getfield inst
                      │  │││                                                 ; - com.google.re2j.Machine::step@107 (line 278)
-  0.81%    0.86%     │  │││   0x00007f31d12442c9: mov    0xc(%r12,%r9,8),%esi  ;*getfield op
+  0.76%    1.15%     │  │││   0x00007ff4f921ec89: mov    0xc(%r12,%r9,8),%esi  ;*getfield op
                      │  │││                                                 ; - com.google.re2j.Machine::step@117 (line 280)
-                     │  │││                                                 ; implicit exception: dispatches to 0x00007f31d12455c5
-  2.50%    1.74%     │  │││   0x00007f31d12442ce: mov    0x18(%r12,%r9,8),%ecx  ;*getfield runes
+                     │  │││                                                 ; implicit exception: dispatches to 0x00007ff4f921ff85
+  2.79%    2.52%     │  │││   0x00007ff4f921ec8e: mov    0x18(%r12,%r9,8),%ecx  ;*getfield runes
                      │  │││                                                 ; - com.google.re2j.Machine::step@320 (line 310)
-  0.11%    0.13%     │  │││   0x00007f31d12442d3: mov    0xc(%r12,%r11,8),%r14d  ;*getfield cap
+  0.10%    0.10%     │  │││   0x00007ff4f921ec93: mov    0xc(%r12,%r11,8),%r14d  ;*getfield cap
                      │  │││                                                 ; - com.google.re2j.Machine::step@176 (line 287)
-  0.06%    0.00%     │  │││   0x00007f31d12442d8: lea    (%r12,%r11,8),%r10  ;*getfield thread
+  0.01%    0.01%     │  │││   0x00007ff4f921ec98: lea    (%r12,%r11,8),%r10  ;*getfield thread
                      │  │││                                                 ; - com.google.re2j.Machine::step@40 (line 269)
-  0.04%    0.04%     │  │││   0x00007f31d12442dc: cmp    $0x9,%esi
-                     ╰  │││   0x00007f31d12442df: je     0x00007f31d1244190
-  0.37%    0.26%        │││   0x00007f31d12442e5: cmp    $0x9,%esi
-                        │││   0x00007f31d12442e8: jle    0x00007f31d1244395
-  0.08%    0.02%        │││   0x00007f31d12442ee: cmp    $0xb,%esi
-                      ╭ │││   0x00007f31d12442f1: je     0x00007f31d1244371
-  0.10%    0.02%      │ │││   0x00007f31d12442f3: cmp    $0xb,%esi
-                      │ │││   0x00007f31d12442f6: jg     0x00007f31d1244f19  ;*tableswitch
+  0.00%              │  │││   0x00007ff4f921ec9c: cmp    $0x9,%esi
+                     ╰  │││   0x00007ff4f921ec9f: je     0x00007ff4f921eb50
+  0.37%    0.25%        │││   0x00007ff4f921eca5: cmp    $0x9,%esi
+                        │││   0x00007ff4f921eca8: jle    0x00007ff4f921ed55
+  0.09%    0.04%        │││   0x00007ff4f921ecae: cmp    $0xb,%esi
+                      ╭ │││   0x00007ff4f921ecb1: je     0x00007ff4f921ed31
+  0.13%    0.05%      │ │││   0x00007ff4f921ecb3: cmp    $0xb,%esi
+                      │ │││   0x00007ff4f921ecb6: jg     0x00007ff4f921f8d9  ;*tableswitch
                       │ │││                                                 ; - com.google.re2j.Machine::step@120 (line 280)
-  0.09%    0.03%      │ │││   0x00007f31d12442fc: mov    %r8d,0x94(%rsp)
-                      │ │││   0x00007f31d1244304: mov    %edi,0x9c(%rsp)
-  0.02%    0.00%      │ │││   0x00007f31d124430b: mov    %r10,%rax          ;*ifeq
+  0.05%    0.03%      │ │││   0x00007ff4f921ecbc: mov    %r8d,0x94(%rsp)
+                      │ │││   0x00007ff4f921ecc4: mov    %edi,0x9c(%rsp)
+  0.03%               │ │││   0x00007ff4f921eccb: mov    %r10,%rax          ;*ifeq
                       │ │││                                                 ; - com.google.re2j.Machine::step@373 (line 324)
-  0.08%    0.01%      │ │││↗  0x00007f31d124430e: mov    0x10(%r12,%r9,8),%ecx  ;*getfield out
+  0.13%    0.02%      │ │││↗  0x00007ff4f921ecce: mov    0x10(%r12,%r9,8),%ecx  ;*getfield out
                       │ ││││                                                ; - com.google.re2j.Machine::step@380 (line 325)
-  0.08%    0.03%      │ ││││  0x00007f31d1244313: mov    %r14,%r9
-  0.00%               │ ││││  0x00007f31d1244316: shl    $0x3,%r9           ;*getfield cap
+  0.08%    0.03%      │ ││││  0x00007ff4f921ecd3: mov    %r14,%r9
+  0.00%               │ ││││  0x00007ff4f921ecd6: shl    $0x3,%r9           ;*getfield cap
                       │ ││││                                                ; - com.google.re2j.Machine::step@176 (line 287)
-  0.04%               │ ││││  0x00007f31d124431a: mov    0x28(%rsp),%rsi
-  0.09%    0.06%      │ ││││  0x00007f31d124431f: mov    0x18(%rsp),%rdx
-  0.08%    0.01%      │ ││││  0x00007f31d1244324: mov    0x14(%rsp),%r8d
-                      │ ││││  0x00007f31d1244329: mov    0x90(%rsp),%edi
-  0.00%    0.02%      │ ││││  0x00007f31d1244330: mov    %rax,(%rsp)
-  0.08%    0.02%      │ ││││  0x00007f31d1244334: data16 xchg %ax,%ax
-  0.07%    0.05%      │ ││││  0x00007f31d1244337: callq  0x00007f31d1046020  ; OopMap{[8]=Oop [24]=Oop [40]=Oop off=540}
+  0.01%    0.00%      │ ││││  0x00007ff4f921ecda: mov    0x28(%rsp),%rsi
+  0.12%    0.06%      │ ││││  0x00007ff4f921ecdf: mov    0x18(%rsp),%rdx
+  0.08%    0.05%      │ ││││  0x00007ff4f921ece4: mov    0x14(%rsp),%r8d
+                      │ ││││  0x00007ff4f921ece9: mov    0x90(%rsp),%edi
+  0.01%               │ ││││  0x00007ff4f921ecf0: mov    %rax,(%rsp)
+  0.10%    0.05%      │ ││││  0x00007ff4f921ecf4: data16 xchg %ax,%ax
+  0.12%    0.04%      │ ││││  0x00007ff4f921ecf7: callq  0x00007ff4f9046020  ; OopMap{[8]=Oop [24]=Oop [40]=Oop off=540}
                       │ ││││                                                ;*invokespecial add
                       │ ││││                                                ; - com.google.re2j.Machine::step@394 (line 325)
                       │ ││││                                                ;   {optimized virtual_call}
-                      │ ││││  0x00007f31d124433c: test   %rax,%rax
-                      │╭││││  0x00007f31d124433f: jne    0x00007f31d1244354  ;*ifnull
+  0.00%               │ ││││  0x00007ff4f921ecfc: test   %rax,%rax
+                      │╭││││  0x00007ff4f921ecff: jne    0x00007ff4f921ed14  ;*ifnull
                       ││││││                                                ; - com.google.re2j.Machine::step@401 (line 327)
-  0.00%               ││││││  0x00007f31d1244341: xor    %r11d,%r11d
-                      ││││││  0x00007f31d1244344: mov    0x20(%rsp),%ecx
-  0.20%    0.28%      ││││││  0x00007f31d1244348: mov    0x9c(%rsp),%edi
-  0.00%               ││╰│││  0x00007f31d124434f: jmpq   0x00007f31d124425d
-                      │↘ │││  0x00007f31d1244354: mov    %rax,0x50(%rsp)
-                      │  │││  0x00007f31d1244359: mov    0x20(%rsp),%ecx
-                      │  │││  0x00007f31d124435d: mov    0x94(%rsp),%r8d
-  0.00%               │  │││  0x00007f31d1244365: mov    0x9c(%rsp),%edi
-                      │  ╰││  0x00007f31d124436c: jmpq   0x00007f31d12441b4
-                      ↘   ││  0x00007f31d1244371: mov    0x20(%rsp),%ecx
-                          ││  0x00007f31d1244375: cmp    $0xa,%ecx
-                          ╰│  0x00007f31d1244378: je     0x00007f31d12441af  ;*if_icmpeq
+                      ││││││  0x00007ff4f921ed01: xor    %r11d,%r11d
+                      ││││││  0x00007ff4f921ed04: mov    0x20(%rsp),%ecx
+  0.18%    0.25%      ││││││  0x00007ff4f921ed08: mov    0x9c(%rsp),%edi
+                      ││╰│││  0x00007ff4f921ed0f: jmpq   0x00007ff4f921ec1d
+                      │↘ │││  0x00007ff4f921ed14: mov    %rax,0x50(%rsp)
+                      │  │││  0x00007ff4f921ed19: mov    0x20(%rsp),%ecx
+                      │  │││  0x00007ff4f921ed1d: mov    0x94(%rsp),%r8d
+  0.00%               │  │││  0x00007ff4f921ed25: mov    0x9c(%rsp),%edi
+                      │  ╰││  0x00007ff4f921ed2c: jmpq   0x00007ff4f921eb74
+                      ↘   ││  0x00007ff4f921ed31: mov    0x20(%rsp),%ecx
+                          ││  0x00007ff4f921ed35: cmp    $0xa,%ecx
+                          ╰│  0x00007ff4f921ed38: je     0x00007ff4f921eb6f  ;*if_icmpeq
                            │                                                ; - com.google.re2j.Machine::step@348 (line 318)
-                           │  0x00007f31d124437e: mov    %r8d,0x94(%rsp)
-                           │  0x00007f31d1244386: mov    %edi,0x9c(%rsp)
-                           │  0x00007f31d124438d: mov    %r10,%rax
-                           ╰  0x00007f31d1244390: jmpq   0x00007f31d124430e
-  0.10%    0.17%              0x00007f31d1244395: cmp    $0x7,%esi
+                           │  0x00007ff4f921ed3e: mov    %r8d,0x94(%rsp)
+                           │  0x00007ff4f921ed46: mov    %edi,0x9c(%rsp)
+                           │  0x00007ff4f921ed4d: mov    %r10,%rax
+                           ╰  0x00007ff4f921ed50: jmpq   0x00007ff4f921ecce
+  0.11%    0.15%              0x00007ff4f921ed55: cmp    $0x7,%esi
 ....................................................................................................
- 22.92%   22.44%  <total for region 2>
+ 22.25%   21.69%  <total for region 2>
 
 ....[Hottest Region 3]..............................................................................
-C2, level 4, com.google.re2j.Machine::add, version 523 (400 bytes) 
+C2, level 4, com.google.re2j.Machine::add, version 494 (396 bytes) 
 
-                          0x00007f31d12383b6: mov    0x70(%rsp),%r10
-                          0x00007f31d12383bb: mov    %r10,(%rsp)
-                          0x00007f31d12383bf: callq  0x00007f31d1046020  ; OopMap{off=804}
+                          0x00007ff4f92168cc: mov    %r10,(%rsp)
+                          0x00007ff4f92168d0: data16 xchg %ax,%ax
+                          0x00007ff4f92168d3: callq  0x00007ff4f9046020  ; OopMap{off=504}
                                                                         ;*invokespecial add
                                                                         ; - com.google.re2j.Machine::add@203 (line 369)
                                                                         ;   {optimized virtual_call}
-                  ╭       0x00007f31d12383c4: jmpq   0x00007f31d1238558
-                  │       0x00007f31d12383c9: mov    0x70(%rsp),%rax
-                  │╭      0x00007f31d12383ce: jmpq   0x00007f31d1238558  ;*tableswitch
+                  ╭       0x00007ff4f92168d8: jmpq   0x00007ff4f9216a68
+                  │       0x00007ff4f92168dd: mov    0x70(%rsp),%rax
+                  │╭      0x00007ff4f92168e2: jmpq   0x00007ff4f9216a68  ;*tableswitch
                   ││                                                    ; - com.google.re2j.Machine::add@40 (line 349)
-  0.71%    0.83%  ││      0x00007f31d12383d3: mov    %rbx,%rdx
-  0.00%           ││      0x00007f31d12383d6: mov    0x1c(%rsp),%r8d
-  0.08%    0.06%  ││      0x00007f31d12383db: mov    0x20(%rsp),%r9
-  0.03%    0.05%  ││      0x00007f31d12383e0: mov    0x28(%rsp),%edi
-  0.39%    0.36%  ││      0x00007f31d12383e4: mov    0x70(%rsp),%r10
-           0.01%  ││      0x00007f31d12383e9: mov    %r10,(%rsp)
-  0.03%    0.05%  ││      0x00007f31d12383ed: mov    %rsi,%rbp
-  0.03%    0.04%  ││      0x00007f31d12383f0: data16 xchg %ax,%ax
-  0.29%    0.31%  ││      0x00007f31d12383f3: callq  0x00007f31d1046020  ; OopMap{rbp=Oop [32]=Oop [56]=Oop [64]=Oop off=856}
+  0.54%    0.57%  ││      0x00007ff4f92168e7: mov    0x1c(%rsp),%r8d
+  0.03%    0.03%  ││      0x00007ff4f92168ec: mov    0x20(%rsp),%r9
+  0.02%    0.03%  ││      0x00007ff4f92168f1: mov    0x28(%rsp),%edi
+                  ││      0x00007ff4f92168f5: mov    0x70(%rsp),%r10
+  0.26%    0.33%  ││      0x00007ff4f92168fa: mov    %r10,(%rsp)
+  0.02%    0.03%  ││      0x00007ff4f92168fe: mov    %rsi,%rbp
+  0.03%    0.01%  ││      0x00007ff4f9216901: xchg   %ax,%ax
+           0.00%  ││      0x00007ff4f9216903: callq  0x00007ff4f9046020  ; OopMap{rbp=Oop [32]=Oop [56]=Oop [64]=Oop off=552}
                   ││                                                    ;*invokespecial add
                   ││                                                    ; - com.google.re2j.Machine::add@127 (line 358)
                   ││                                                    ;   {optimized virtual_call}
-           0.00%  ││      0x00007f31d12383f8: mov    0x38(%rsp),%r10
-  0.42%    0.23%  ││      0x00007f31d12383fd: mov    0x14(%r10),%ecx    ;*getfield arg
+  0.19%    0.10%  ││      0x00007ff4f9216908: mov    0x38(%rsp),%r10
+  0.14%    0.16%  ││      0x00007ff4f921690d: mov    0x14(%r10),%ecx    ;*getfield arg
                   ││                                                    ; - com.google.re2j.Machine::add@136 (line 359)
-                  ││      0x00007f31d1238401: mov    %rbp,%rsi
-  0.00%           ││      0x00007f31d1238404: mov    0x40(%rsp),%rdx
-  0.19%    0.06%  ││      0x00007f31d1238409: mov    0x1c(%rsp),%r8d
-  0.17%    0.28%  ││      0x00007f31d123840e: mov    0x20(%rsp),%r9
-                  ││      0x00007f31d1238413: mov    0x28(%rsp),%edi
-  0.00%    0.00%  ││      0x00007f31d1238417: mov    %rax,(%rsp)
-  0.21%    0.13%  ││      0x00007f31d123841b: callq  0x00007f31d1046020  ; OopMap{off=896}
+  0.00%           ││      0x00007ff4f9216911: mov    %rbp,%rsi
+  0.22%    0.17%  ││      0x00007ff4f9216914: mov    0x40(%rsp),%rdx
+  0.13%    0.16%  ││      0x00007ff4f9216919: mov    0x1c(%rsp),%r8d
+  0.01%           ││      0x00007ff4f921691e: mov    0x20(%rsp),%r9
+                  ││      0x00007ff4f9216923: mov    0x28(%rsp),%edi
+  0.31%    0.13%  ││      0x00007ff4f9216927: mov    %rax,(%rsp)
+  0.17%    0.15%  ││      0x00007ff4f921692b: callq  0x00007ff4f9046020  ; OopMap{off=592}
                   ││                                                    ;*invokespecial add
                   ││                                                    ; - com.google.re2j.Machine::add@146 (line 359)
                   ││                                                    ;   {optimized virtual_call}
-  0.00%           ││╭     0x00007f31d1238420: jmpq   0x00007f31d1238558  ;*aload
+  0.01%    0.01%  ││╭     0x00007ff4f9216930: jmpq   0x00007ff4f9216a68  ;*aload
                   │││                                                   ; - com.google.re2j.Machine::add@293 (line 388)
-  1.78%    2.13%  │││     0x00007f31d1238425: mov    0x38(%rsp),%r10
-                  │││     0x00007f31d123842a: mov    %r10,%r9
-           0.00%  │││     0x00007f31d123842d: shr    $0x3,%r9           ;*putfield inst
+  1.82%    2.15%  │││     0x00007ff4f9216935: mov    0x38(%rsp),%r10
+  0.01%           │││     0x00007ff4f921693a: mov    %r10,%r9
+  0.01%    0.01%  │││     0x00007ff4f921693d: shr    $0x3,%r9           ;*putfield inst
                   │││                                                   ; - com.google.re2j.Machine::alloc@47 (line 151)
                   │││                                                   ; - com.google.re2j.Machine::add@301 (line 389)
-  0.02%    0.01%  │││     0x00007f31d1238431: mov    0x70(%rsp),%rbx
-  0.71%    0.86%  │││     0x00007f31d1238436: test   %rbx,%rbx
-                  │││╭    0x00007f31d1238439: je     0x00007f31d1238459  ;*ifnonnull
+                  │││     0x00007ff4f9216941: mov    0x70(%rsp),%r13
+  0.74%    0.76%  │││     0x00007ff4f9216946: test   %r13,%r13
+                  │││╭    0x00007ff4f9216949: je     0x00007ff4f9216969  ;*ifnonnull
                   ││││                                                  ; - com.google.re2j.Machine::add@295 (line 388)
-                  ││││    0x00007f31d123843b: mov    %r9d,0x10(%rbx)
-                  ││││    0x00007f31d123843f: mov    %rbx,%r10
-                  ││││    0x00007f31d1238442: shr    $0x9,%r10
-  0.20%    0.28%  ││││    0x00007f31d1238446: movabs $0x7f31e205c000,%r11
-                  ││││    0x00007f31d1238450: mov    %r12b,(%r11,%r10,1)  ;*putfield inst
+                  ││││    0x00007ff4f921694b: mov    %r9d,0x10(%r13)
+                  ││││    0x00007ff4f921694f: mov    %r13,%r10
+                  ││││    0x00007ff4f9216952: shr    $0x9,%r10
+  0.16%    0.15%  ││││    0x00007ff4f9216956: movabs $0x7ff50a6cc000,%r11
+                  ││││    0x00007ff4f9216960: mov    %r12b,(%r11,%r10,1)  ;*putfield inst
                   ││││                                                  ; - com.google.re2j.Machine::add@313 (line 391)
-                  ││││╭   0x00007f31d1238454: jmpq   0x00007f31d12384e4
-                  │││↘│   0x00007f31d1238459: mov    0x20(%rsi),%ebp    ;*getfield pool
+  0.00%    0.00%  ││││╭   0x00007ff4f9216964: jmpq   0x00007ff4f92169f4
+  0.00%           │││↘│   0x00007ff4f9216969: mov    0x20(%rsi),%ebp    ;*getfield pool
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@1 (line 147)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d123845c: mov    0x8(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007f31d123883d
-  0.04%    0.01%  │││ │   0x00007f31d1238461: cmp    $0xf8002f22,%r11d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
-                  │││ │   0x00007f31d1238468: jne    0x00007f31d1238655
-  0.48%    0.61%  │││ │   0x00007f31d123846e: lea    (%r12,%rbp,8),%r11  ;*invokeinterface size
+  0.01%           │││ │   0x00007ff4f921696c: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007ff4f9216e81
+                  │││ │   0x00007ff4f9216971: cmp    $0xf8002f22,%r10d  ;   {metadata(&apos;java/util/ArrayList&apos;)}
+                  │││ │   0x00007ff4f9216978: jne    0x00007ff4f9216c99
+  0.58%    0.55%  │││ │   0x00007ff4f921697e: lea    (%r12,%rbp,8),%r10  ;*invokeinterface size
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@4 (line 147)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d1238472: mov    0x10(%r11),%ecx    ;*getfield size
+                  │││ │   0x00007ff4f9216982: mov    0x10(%r10),%edi    ;*getfield size
                   │││ │                                                 ; - java.util.ArrayList::size@1 (line 278)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@4 (line 147)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d1238476: test   %ecx,%ecx
-                  │││ │   0x00007f31d1238478: jle    0x00007f31d12386b5  ;*ifle
+                  │││ │   0x00007ff4f9216986: test   %edi,%edi
+                  │││ │   0x00007ff4f9216988: jle    0x00007ff4f9216cfd  ;*ifle
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@11 (line 148)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.03%    0.02%  │││ │   0x00007f31d123847e: mov    %ecx,%r8d
-  0.51%    0.38%  │││ │   0x00007f31d1238481: dec    %r8d               ;*isub
+  0.00%           │││ │   0x00007ff4f921698e: mov    %edi,%r8d
+  0.52%    0.52%  │││ │   0x00007ff4f9216991: dec    %r8d               ;*isub
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@20 (line 148)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d1238484: cmp    %ecx,%r8d
-                  │││ │   0x00007f31d1238487: jge    0x00007f31d12386dd  ;*if_icmplt
+                  │││ │   0x00007ff4f9216994: cmp    %edi,%r8d
+                  │││ │   0x00007ff4f9216997: jge    0x00007ff4f9216d25  ;*if_icmplt
                   │││ │                                                 ; - java.util.ArrayList::rangeCheck@5 (line 652)
                   │││ │                                                 ; - java.util.ArrayList::remove@2 (line 492)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d123848d: incl   0xc(%r11)          ;*putfield modCount
+  0.00%           │││ │   0x00007ff4f921699d: incl   0xc(%r10)          ;*putfield modCount
                   │││ │                                                 ; - java.util.ArrayList::remove@12 (line 494)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.53%    0.39%  │││ │   0x00007f31d1238491: mov    0x14(%r11),%ebp    ;*getfield elementData
+  0.62%    0.47%  │││ │   0x00007ff4f92169a1: mov    0x14(%r10),%ebp    ;*getfield elementData
                   │││ │                                                 ; - java.util.ArrayList::elementData@1 (line 418)
                   │││ │                                                 ; - java.util.ArrayList::remove@17 (line 495)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.01%           │││ │   0x00007f31d1238495: mov    0xc(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007f31d123884d
-  0.02%    0.01%  │││ │   0x00007f31d123849a: cmp    %r10d,%r8d
-                  │││ │   0x00007f31d123849d: jae    0x00007f31d123862d  ;*aaload
+                  │││ │   0x00007ff4f92169a5: mov    0xc(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007ff4f9216e91
+  0.01%           │││ │   0x00007ff4f92169aa: cmp    %r11d,%r8d
+                  │││ │   0x00007ff4f92169ad: jae    0x00007ff4f9216c71  ;*aaload
                   │││ │                                                 ; - java.util.ArrayList::elementData@5 (line 418)
                   │││ │                                                 ; - java.util.ArrayList::remove@17 (line 495)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.54%    0.41%  │││ │   0x00007f31d12384a3: mov    %r8d,0x10(%r11)    ;*putfield size
+  0.52%    0.53%  │││ │   0x00007ff4f92169b3: mov    %r8d,0x10(%r10)    ;*putfield size
                   │││ │                                                 ; - java.util.ArrayList::remove@62 (line 501)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-                  │││ │   0x00007f31d12384a7: lea    (%r12,%rbp,8),%r10
-                  │││ │   0x00007f31d12384ab: mov    0xc(%r10,%rcx,4),%ebp  ;*aaload
+                  │││ │   0x00007ff4f92169b7: lea    (%r12,%rbp,8),%r10
+                  │││ │   0x00007ff4f92169bb: mov    0xc(%r10,%rdi,4),%ebp  ;*aaload
                   │││ │                                                 ; - java.util.ArrayList::elementData@5 (line 418)
                   │││ │                                                 ; - java.util.ArrayList::remove@17 (line 495)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.02%    0.01%  │││ │   0x00007f31d12384b0: mov    %r12d,0xc(%r10,%rcx,4)  ;*aastore
+  0.00%           │││ │   0x00007ff4f92169c0: mov    %r12d,0xc(%r10,%rdi,4)  ;*aastore
                   │││ │                                                 ; - java.util.ArrayList::remove@66 (line 501)
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@21 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.56%    0.40%  │││ │   0x00007f31d12384b5: mov    0x8(%r12,%rbp,8),%r11d  ; implicit exception: dispatches to 0x00007f31d1238861
-  0.00%           │││ │   0x00007f31d12384ba: cmp    $0xf8019b16,%r11d  ;   {metadata(&apos;com/google/re2j/Machine$Thread&apos;)}
-                  │││ │   0x00007f31d12384c1: jne    0x00007f31d1238771
-           0.01%  │││ │   0x00007f31d12384c7: lea    (%r12,%rbp,8),%rbx  ;*checkcast
+  0.53%    0.24%  │││ │   0x00007ff4f92169c5: mov    0x8(%r12,%rbp,8),%r10d  ; implicit exception: dispatches to 0x00007ff4f9216ea5
+  0.04%    0.02%  │││ │   0x00007ff4f92169ca: cmp    $0xf8019b16,%r10d  ;   {metadata(&apos;com/google/re2j/Machine$Thread&apos;)}
+                  │││ │   0x00007ff4f92169d1: jne    0x00007ff4f9216db9
+  0.02%    0.02%  │││ │   0x00007ff4f92169d7: lea    (%r12,%rbp,8),%r13  ;*checkcast
                   │││ │                                                 ; - com.google.re2j.Machine::alloc@26 (line 149)
                   │││ │                                                 ; - com.google.re2j.Machine::add@301 (line 389)
-  0.01%    0.00%  │││ │   0x00007f31d12384cb: mov    %r9d,0x10(%rbx)
-  0.59%    0.22%  │││ │   0x00007f31d12384cf: mov    %rbx,%r10
-                  │││ │   0x00007f31d12384d2: shr    $0x9,%r10
-           0.00%  │││ │   0x00007f31d12384d6: movabs $0x7f31e205c000,%r11
-  0.01%           │││ │   0x00007f31d12384e0: mov    %r12b,(%r11,%r10,1)  ;*aload
+                  │││ │   0x00007ff4f92169db: mov    %r9d,0x10(%r13)
+  0.52%    0.20%  │││ │   0x00007ff4f92169df: mov    %r13,%r10
+                  │││ │   0x00007ff4f92169e2: shr    $0x9,%r10
+  0.01%           │││ │   0x00007ff4f92169e6: movabs $0x7ff50a6cc000,%r11
+                  │││ │   0x00007ff4f92169f0: mov    %r12b,(%r11,%r10,1)  ;*aload
                   │││ │                                                 ; - com.google.re2j.Machine::add@316 (line 393)
-  0.58%    0.22%  │││ ↘   0x00007f31d12384e4: mov    0x20(%rsp),%rdi
-  0.19%    0.20%  │││     0x00007f31d12384e9: mov    0xc(%rdi),%r10d    ;*arraylength
+  0.66%    0.15%  │││ ↘   0x00007ff4f92169f4: mov    0x20(%rsp),%rdi
+  0.17%    0.16%  │││     0x00007ff4f92169f9: mov    0xc(%rdi),%r10d    ;*arraylength
                   │││                                                   ; - com.google.re2j.Machine::add@318 (line 393)
-                  │││                                                   ; implicit exception: dispatches to 0x00007f31d123882d
-                  │││     0x00007f31d12384ed: test   %r10d,%r10d
-                  │││     0x00007f31d12384f0: jle    0x00007f31d1238693  ;*ifle
+                  │││                                                   ; implicit exception: dispatches to 0x00007ff4f9216e71
+           0.00%  │││     0x00007ff4f92169fd: test   %r10d,%r10d
+                  │││     0x00007ff4f9216a00: jle    0x00007ff4f9216cda  ;*ifle
                   │││                                                   ; - com.google.re2j.Machine::add@319 (line 393)
-  0.01%    0.01%  │││     0x00007f31d12384f6: mov    0xc(%rbx),%r11d    ;*getfield cap
+  0.58%    0.40%  │││     0x00007ff4f9216a06: mov    0xc(%r13),%r8d     ;*getfield cap
                   │││                                                   ; - com.google.re2j.Machine::add@324 (line 393)
-  0.55%    0.30%  │││     0x00007f31d12384fa: lea    (%r12,%r13,8),%rbp  ;*aaload
+  0.18%    0.17%  │││     0x00007ff4f9216a0a: lea    (%r12,%rbx,8),%rbp  ;*aaload
                   │││                                                   ; - com.google.re2j.Machine$Queue::add@24 (line 61)
                   │││                                                   ; - com.google.re2j.Machine::add@20 (line 347)
-  0.22%    0.27%  │││     0x00007f31d12384fe: mov    %r11,%r8
-                  │││     0x00007f31d1238501: shl    $0x3,%r8
-  0.01%           │││     0x00007f31d1238505: cmp    %rdi,%r8
-                  │││  ╭  0x00007f31d1238508: je     0x00007f31d1238535  ;*if_acmpeq
+  0.00%    0.00%  │││     0x00007ff4f9216a0e: mov    %r8,%r11
+           0.01%  │││     0x00007ff4f9216a11: shl    $0x3,%r11
+  0.56%    0.35%  │││     0x00007ff4f9216a15: cmp    %rdi,%r11
+                  │││  ╭  0x00007ff4f9216a18: je     0x00007ff4f9216a45  ;*if_acmpeq
                   │││  │                                                ; - com.google.re2j.Machine::add@329 (line 393)
-  0.57%    0.43%  │││  │  0x00007f31d123850a: mov    0xc(%r12,%r11,8),%r8d  ; implicit exception: dispatches to 0x00007f31d123887d
-  0.01%    0.00%  │││  │  0x00007f31d123850f: lea    (%r12,%r11,8),%rcx  ;*getfield cap
+  0.01%           │││  │  0x00007ff4f9216a1a: mov    0xc(%r12,%r8,8),%r9d  ; implicit exception: dispatches to 0x00007ff4f9216ebd
+  0.03%    0.03%  │││  │  0x00007ff4f9216a1f: lea    (%r12,%r8,8),%rcx  ;*getfield cap
                   │││  │                                                ; - com.google.re2j.Machine::add@324 (line 393)
-  0.00%           │││  │  0x00007f31d1238513: cmp    %r10d,%r8d
-                  │││  │  0x00007f31d1238516: jb     0x00007f31d1238669
-  0.03%    0.03%  │││  │  0x00007f31d123851c: lea    0x10(%r12,%r11,8),%rsi
-  0.43%    0.59%  │││  │  0x00007f31d1238521: add    $0x10,%rdi
-                  │││  │  0x00007f31d1238525: movslq %r10d,%rdx
-                  │││  │  0x00007f31d1238528: movabs $0x7f31d1052640,%r10
-  0.03%           │││  │  0x00007f31d1238532: callq  *%r10              ;*aload
+                  │││  │  0x00007ff4f9216a23: cmp    %r10d,%r9d
+                  │││  │  0x00007ff4f9216a26: jb     0x00007ff4f9216cad
+  0.68%    0.30%  │││  │  0x00007ff4f9216a2c: lea    0x10(%r12,%r8,8),%rsi
+                  │││  │  0x00007ff4f9216a31: add    $0x10,%rdi
+                  │││  │  0x00007ff4f9216a35: movslq %r10d,%rdx
+                  │││  │  0x00007ff4f9216a38: movabs $0x7ff4f9052640,%r10
+  0.50%    0.28%  │││  │  0x00007ff4f9216a42: callq  *%r10              ;*aload
                   │││  │                                                ; - com.google.re2j.Machine::add@347 (line 396)
-                  │││  ↘  0x00007f31d1238535: mov    %rbp,%r10
-  0.19%    0.20%  │││     0x00007f31d1238538: mov    %rbx,%r8
-  0.01%    0.03%  │││     0x00007f31d123853b: shr    $0x3,%r8
-  0.54%    0.83%  │││     0x00007f31d123853f: mov    %r8d,0x10(%r12,%r13,8)
-                  │││     0x00007f31d1238544: shr    $0x9,%r10
-  0.19%    0.20%  │││     0x00007f31d1238548: movabs $0x7f31e205c000,%r11
-  0.03%    0.06%  │││     0x00007f31d1238552: mov    %r12b,(%r11,%r10,1)  ;*putfield thread
+  0.17%    0.13%  │││  ↘  0x00007ff4f9216a45: mov    %rbp,%r10
+  0.04%    0.11%  │││     0x00007ff4f9216a48: mov    %r13,%r11
+  0.51%    0.66%  │││     0x00007ff4f9216a4b: shr    $0x3,%r11
+           0.01%  │││     0x00007ff4f9216a4f: mov    %r11d,0x10(%r12,%rbx,8)
+  0.15%    0.05%  │││     0x00007ff4f9216a54: shr    $0x9,%r10
+  0.07%    0.08%  │││     0x00007ff4f9216a58: movabs $0x7ff50a6cc000,%r11
+  0.56%    0.73%  │││     0x00007ff4f9216a62: mov    %r12b,(%r11,%r10,1)  ;*putfield thread
                   │││                                                   ; - com.google.re2j.Machine::add@351 (line 396)
-  0.56%    0.80%  │││     0x00007f31d1238556: xor    %eax,%eax          ;*synchronization entry
+  0.00%    0.03%  │││     0x00007ff4f9216a66: xor    %eax,%eax          ;*synchronization entry
                   │││                                                   ; - com.google.re2j.Machine::add@-1 (line 341)
-  0.56%    0.65%  ↘↘↘     0x00007f31d1238558: add    $0x60,%rsp
-  0.20%    0.11%          0x00007f31d123855c: pop    %rbp
-  0.49%    0.53%          0x00007f31d123855d: test   %eax,0x1841ba9d(%rip)        # 0x00007f31e9654000
+  0.75%    0.80%  ↘↘↘     0x00007ff4f9216a68: add    $0x60,%rsp
+  0.63%    0.64%          0x00007ff4f9216a6c: pop    %rbp
+  0.02%    0.00%          0x00007ff4f9216a6d: test   %eax,0x18aad58d(%rip)        # 0x00007ff511cc4000
                                                                         ;   {poll_return}
-  0.65%    0.73%          0x00007f31d1238563: retq                      ;*tableswitch
+  0.56%    0.62%          0x00007ff4f9216a73: retq                      ;*tableswitch
                                                                         ; - com.google.re2j.Machine::add@40 (line 349)
-                          0x00007f31d1238564: mov    %rbx,%rdx
-                          0x00007f31d1238567: mov    0x1c(%rsp),%r8d
-                          0x00007f31d123856c: mov    0x20(%rsp),%r9
-                          0x00007f31d1238571: mov    0x70(%rsp),%r10
-                          0x00007f31d1238576: mov    %r10,(%rsp)
-                          0x00007f31d123857a: nop
-                          0x00007f31d123857b: callq  0x00007f31d1046020  ; OopMap{off=1248}
+                          0x00007ff4f9216a74: mov    0x1c(%rsp),%r8d
+                          0x00007ff4f9216a79: mov    0x20(%rsp),%r9
+                          0x00007ff4f9216a7e: mov    %ebx,%edi
+                          0x00007ff4f9216a80: mov    0x70(%rsp),%r10
+                          0x00007ff4f9216a85: mov    %r10,(%rsp)
+                          0x00007ff4f9216a89: xchg   %ax,%ax
+                          0x00007ff4f9216a8b: callq  0x00007ff4f9046020  ; OopMap{off=944}
                                                                         ;*invokespecial add
 ....................................................................................................
- 14.71%   14.37%  <total for region 3>
+ 15.05%   13.21%  <total for region 3>
 
 ....[Hottest Regions]...............................................................................
- 28.38%   28.37%         C2, level 4  com.google.re2j.Machine::add, version 523 (331 bytes) 
- 22.92%   22.44%         C2, level 4  com.google.re2j.Machine::step, version 530 (549 bytes) 
- 14.71%   14.37%         C2, level 4  com.google.re2j.Machine::add, version 523 (400 bytes) 
-  8.56%    7.97%         C2, level 4  com.google.re2j.Machine::step, version 530 (218 bytes) 
-  7.79%    9.84%         C2, level 4  com.google.re2j.Machine::step, version 530 (304 bytes) 
-  6.76%    7.86%         C2, level 4  com.google.re2j.Machine::match, version 582 (775 bytes) 
-  3.88%    2.42%        runtime stub  StubRoutines::jint_disjoint_arraycopy (128 bytes) 
-  1.92%    2.23%         C2, level 4  com.google.re2j.Machine::step, version 530 (149 bytes) 
-  0.97%    0.96%   [kernel.kallsyms]  [unknown] (6 bytes) 
-  0.84%    0.75%         C2, level 4  com.google.re2j.Machine::add, version 523 (38 bytes) 
-  0.40%    0.11%         C2, level 4  com.google.re2j.Machine::init, version 578 (204 bytes) 
-  0.27%    0.38%         C2, level 4  com.google.re2j.Machine::match, version 582 (65 bytes) 
-  0.15%    0.25%         C2, level 4  com.google.re2j.Machine::step, version 530 (29 bytes) 
-  0.11%            [kernel.kallsyms]  [unknown] (37 bytes) 
-  0.07%    0.01%   [kernel.kallsyms]  [unknown] (2 bytes) 
-  0.06%    0.01%         C2, level 4  com.google.re2j.Machine::init, version 578 (21 bytes) 
-  0.06%    0.05%         C2, level 4  com.google.re2j.Machine::match, version 582 (104 bytes) 
-  0.04%    0.02%         C2, level 4  com.google.re2j.Machine::step, version 530 (43 bytes) 
-  0.04%    0.03%         C2, level 4  com.github.arnaudroger.re2j.generated.Re2jFindRegex_testExp1_jmhTest::testExp1_thrpt_jmhStub, version 658 (43 bytes) 
-  0.04%    0.01%         C2, level 4  com.google.re2j.Matcher::find, version 599 (0 bytes) 
-  2.02%    1.91%  <...other 413 warm regions...>
+ 29.09%   30.11%         C2, level 4  com.google.re2j.Machine::add, version 494 (344 bytes) 
+ 22.25%   21.69%         C2, level 4  com.google.re2j.Machine::step, version 499 (549 bytes) 
+ 15.05%   13.21%         C2, level 4  com.google.re2j.Machine::add, version 494 (396 bytes) 
+  7.95%    9.89%         C2, level 4  com.google.re2j.Machine::step, version 499 (301 bytes) 
+  7.63%    7.71%         C2, level 4  com.google.re2j.Machine::step, version 499 (214 bytes) 
+  7.21%    7.67%         C2, level 4  com.google.re2j.Machine::match, version 545 (710 bytes) 
+  3.53%    2.12%        runtime stub  StubRoutines::jint_disjoint_arraycopy (128 bytes) 
+  1.74%    2.44%         C2, level 4  com.google.re2j.Machine::step, version 499 (149 bytes) 
+  1.55%    1.54%   [kernel.kallsyms]  [unknown] (0 bytes) 
+  0.66%    0.81%         C2, level 4  com.google.re2j.Machine::add, version 494 (39 bytes) 
+  0.43%    0.11%         C2, level 4  com.google.re2j.Machine::init, version 548 (208 bytes) 
+  0.21%    0.21%         C2, level 4  com.google.re2j.Machine::match, version 545 (57 bytes) 
+  0.17%    0.21%         C2, level 4  com.google.re2j.Machine::step, version 499 (23 bytes) 
+  0.08%    0.02%   [kernel.kallsyms]  [unknown] (1 bytes) 
+  0.08%    0.01%   [kernel.kallsyms]  [unknown] (70 bytes) 
+  0.08%    0.05%         C2, level 4  com.google.re2j.Machine::match, version 545 (177 bytes) 
+  0.06%    0.03%   [kernel.kallsyms]  [unknown] (17 bytes) 
+  0.05%    0.03%         C2, level 4  com.google.re2j.Machine::step, version 499 (39 bytes) 
+  0.04%    0.02%   [kernel.kallsyms]  [unknown] (16 bytes) 
+  0.04%    0.02%   [kernel.kallsyms]  [unknown] (0 bytes) 
+  2.11%    2.10%  <...other 446 warm regions...>
 ....................................................................................................
 100.00%  100.00%  <totals>
 
 ....[Hottest Methods (after inlining)]..............................................................
- 43.93%   43.49%         C2, level 4  com.google.re2j.Machine::add, version 523 
- 41.39%   42.75%         C2, level 4  com.google.re2j.Machine::step, version 530 
-  7.29%    8.42%         C2, level 4  com.google.re2j.Machine::match, version 582 
-  3.88%    2.42%        runtime stub  StubRoutines::jint_disjoint_arraycopy 
-  1.80%    1.62%   [kernel.kallsyms]  [unknown] 
-  0.55%    0.18%         C2, level 4  com.google.re2j.Machine::init, version 578 
-  0.16%    0.15%         C2, level 4  com.google.re2j.Matcher::find, version 599 
-  0.11%    0.04%         C2, level 4  com.github.arnaudroger.re2j.generated.Re2jFindRegex_testExp1_jmhTest::testExp1_thrpt_jmhStub, version 658 
-  0.06%    0.03%         C2, level 4  java.util.Collections::shuffle, version 605 
-  0.05%    0.04%      hsdis-amd64.so  [unknown] 
-  0.04%    0.06%        libc-2.26.so  vfprintf 
-  0.03%                    libjvm.so  os::PlatformEvent::park 
-  0.02%    0.01%           libjvm.so  GenericTaskQueueSet<OverflowTaskQueue<StarTask, (MemoryType)1, 131072u>, (MemoryType)1>::steal_best_of_2 
-  0.02%    0.06%        libc-2.26.so  _IO_fwrite 
-  0.02%    0.02%           libjvm.so  Monitor::ILock 
-  0.02%    0.03%           libjvm.so  xmlTextStream::write 
-  0.02%    0.01%           libjvm.so  SpinPause 
-  0.02%    0.02%           libjvm.so  PSPromotionManager::copy_to_survivor_space<false> 
-  0.02%    0.00%           libjvm.so  Monitor::unlock 
-  0.02%    0.02%           libjvm.so  StringTable::unlink_or_oops_do 
-  0.54%    0.37%  <...other 83 warm methods...>
+ 44.80%   44.14%         C2, level 4  com.google.re2j.Machine::add, version 494 
+ 39.79%   41.98%         C2, level 4  com.google.re2j.Machine::step, version 499 
+  7.66%    8.09%         C2, level 4  com.google.re2j.Machine::match, version 545 
+  3.53%    2.12%        runtime stub  StubRoutines::jint_disjoint_arraycopy 
+  2.61%    2.35%   [kernel.kallsyms]  [unknown] 
+  0.53%    0.19%         C2, level 4  com.google.re2j.Machine::init, version 548 
+  0.16%    0.11%         C2, level 4  com.google.re2j.Matcher::find, version 573 
+  0.11%    0.07%         C2, level 4  com.github.arnaudroger.re2j.generated.Re2jFindRegex_testExp1_jmhTest::testExp1_thrpt_jmhStub, version 635 
+  0.04%    0.03%         C2, level 4  java.util.Collections::shuffle, version 587 
+  0.04%    0.11%        libc-2.26.so  vfprintf 
+  0.04%    0.01%              [vdso]  [unknown] 
+  0.04%    0.04%      hsdis-amd64.so  [unknown] 
+  0.04%    0.05%           libjvm.so  _ZN10fileStream5writeEPKcm 
+  0.04%    0.08%           libjvm.so  _ZN13RelocIterator10initializeEP7nmethodPhS2_ 
+  0.03%    0.02%           libjvm.so  _ZN12outputStream15update_positionEPKcm 
+  0.02%    0.01%           libjvm.so  _ZN19GenericTaskQueueSetI17OverflowTaskQueueI8StarTaskL10MemoryType1ELj131072EELS2_1EE15steal_best_of_2EjPiRS1_ 
+  0.02%    0.01%        libc-2.26.so  __strchrnul_avx2 
+  0.02%    0.05%           libjvm.so  _ZN13xmlTextStream5writeEPKcm 
+  0.01%    0.02%        libc-2.26.so  __strlen_avx2 
+  0.01%                  C2, level 4  org.openjdk.jmh.infra.Blackhole::consume, version 569 
+  0.44%    0.28%  <...other 72 warm methods...>
 ....................................................................................................
 100.00%   99.76%  <totals>
 
 ....[Distribution by Source]........................................................................
- 93.49%   95.05%         C2, level 4
-  3.89%    2.42%        runtime stub
-  1.80%    1.62%   [kernel.kallsyms]
-  0.46%    0.47%           libjvm.so
-  0.18%    0.32%        libc-2.26.so
-  0.06%    0.03%  libpthread-2.26.so
-  0.05%    0.05%      hsdis-amd64.so
-  0.03%    0.00%         interpreter
-  0.02%    0.02%              [vdso]
-  0.01%                  C1, level 3
-  0.00%                             
+ 93.10%   94.60%         C2, level 4
+  3.53%    2.13%        runtime stub
+  2.61%    2.35%   [kernel.kallsyms]
+  0.40%    0.55%           libjvm.so
+  0.20%    0.27%        libc-2.26.so
+  0.06%    0.05%  libpthread-2.26.so
+  0.04%    0.04%      hsdis-amd64.so
+  0.04%    0.01%              [vdso]
+  0.01%                  interpreter
+  0.00%                  C1, level 1
+  0.00%                  C1, level 3
 ....................................................................................................
 100.00%  100.00%  <totals>
 
 
 
-# Run complete. Total time: 00:00:44
+# Run complete. Total time: 00:00:45
 
 Benchmark                     Mode  Cnt     Score    Error  Units
-Re2jFindRegex.testExp1       thrpt   20  7396.253 ± 56.828  ops/s
+Re2jFindRegex.testExp1       thrpt   20  5929.827 ± 43.310  ops/s
 Re2jFindRegex.testExp1:·asm  thrpt            NaN             ---
